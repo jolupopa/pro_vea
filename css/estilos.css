@@ -1,0 +1,33 @@
+html {
+  font-size: 13px; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2A2A33; }
+
+.bg-container {
+  background-color: #F9F9FB; }
+
+.text-primary {
+  color: #006AFF; }
+
+.text-secundary {
+  color: #1B5098; }
+
+.logo {
+  font-family: 'Courgette', cursive; }
+
+@media (min-width: 576px) {
+  body {
+    background-color: red; } }
+@media (min-width: 768px) {
+  body {
+    background-color: green; } }
+@media (min-width: 992px) {
+  body {
+    background-color: blue; } }
+@media (min-width: 1200px) {
+  body {
+    background-color: aqua; } }
+
+/*# sourceMappingURL=estilos.css.map */

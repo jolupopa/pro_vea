@@ -1,0 +1,74 @@
+// .row>*{
+// border: 1px solid red;
+// }
+
+//+++++++++++++++++++++++++++
+// patrones de colores
+//+++++++++++++++++++++++++++
+
+$color-principal: #006AFF;
+$color-secundario: #1B5098;
+$color-texto: #2A2A33;
+$color-contenedor: #F9F9FB;
+
+//+++++++++++++++++++++++++++
+// tipografia del sitio
+//+++++++++++++++++++++++++++
+html{
+    font-size: 13px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:$color-texto;
+   
+
+}
+//+++++++++++++++++++++++++++
+// 1 litle-bar
+//+++++++++++++++++++++++++++
+.bg-container{
+    background-color: $color-contenedor;
+}
+.text-primary{
+    color: $color-principal ;
+} 
+.text-secundary{
+    color: $color-secundario ;
+}
+.logo{
+    font-family: 'Courgette', cursive;
+}
+
+//+++++++++++++++++++++++++++
+// media query
+//+++++++++++++++++++++++++++
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    body{
+        background-color: red;
+    }
+}
+
+// Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    body{
+        background-color: green;
+    }
+ }
+
+// Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    body{
+        background-color: blue;
+    }
+ }
+
+// Extra large (xl) devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    body{
+        background-color: aqua;
+    }
+ }
