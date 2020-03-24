@@ -14,27 +14,35 @@ $color-contenedor: #F9F9FB;
 //+++++++++++++++++++++++++++
 // tipografia del sitio
 //+++++++++++++++++++++++++++
+
 html{
     font-size: 13px;
 }
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-    color:$color-texto;
-   
-
+    color: $color-texto;
 }
-//+++++++++++++++++++++++++++
-// 1 litle-bar
-//+++++++++++++++++++++++++++
+
 .bg-container{
     background-color: $color-contenedor;
 }
-.text-primary{
-    color: $color-principal ;
-} 
-.text-secundary{
-    color: $color-secundario ;
+
+.bg-secundary{
+    $background-color: $color-secundario; 
 }
+
+.text-primary{
+    color: $color-principal;
+} 
+
+.text-secundary{
+    color: $color-secundario;
+}
+
+//+++++++++++++++++++++++++++
+// 1 litle-bar
+//+++++++++++++++++++++++++++
 .logo{
     font-family: 'Courgette', cursive;
 }
