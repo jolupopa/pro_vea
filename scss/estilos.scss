@@ -1,6 +1,9 @@
 // .row>*{
 // border: 1px solid red;
 // }
+.caja-responsive{
+    background-color: white;
+}
 
 //+++++++++++++++++++++++++++
 // patrones de colores
@@ -10,6 +13,11 @@ $color-principal: #006AFF;
 $color-secundario: #1B5098;
 $color-texto: #2A2A33;
 $color-contenedor: #F9F9FB;
+$color-celeste:  rgb(149, 207, 240);
+
+$color-boton-normal: $color-principal;
+$color-boton-active: $color-principal;
+$color-boton-hover: $color-celeste;
 
 //+++++++++++++++++++++++++++
 // tipografia del sitio
@@ -23,14 +31,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: $color-texto;
 }
-
-.bg-container{
-    background-color: $color-contenedor;
-}
-
 .bg-secundary{
-    $background-color: $color-secundario; 
+    background-color: $color-secundario;
 }
+
 
 .text-primary{
     color: $color-principal;
@@ -40,11 +44,175 @@ body{
     color: $color-secundario;
 }
 
+// estilos generales para los botones
+.btn{
+    border-radius: .8rem;
+    padding: .6rem 1rem;
+    font-weight: bold;
+}
+.btn-primary {
+    color: #fff;
+    background-color: $color-boton-normal;
+    border-color: $color-boton-normal;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .5s ease;
+}
+
+// efectos de caja para los botones
+.btn-primary::before{
+    content: "";
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background: $color-boton-active;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: skew(45deg,0);
+    transition: all .5s ease;
+
+}
+
+
+.btn-primary:hover {
+    background-color: $color-boton-hover !important;
+}
+
+.btn-primary:hover::before {
+    width: 150%;
+    left: -30%;
+}
+.btn-primary:active{
+    background-color: $color-boton-active !important;
+    border-color: $color-boton-active;
+}
+
+.btn-primary:focus {
+    color: #fff;
+    background-color: $color-boton-normal;
+    border-color: $color-boton-normal;
+    box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);
+}
+
+
+
+
 //+++++++++++++++++++++++++++
 // 1 litle-bar
 //+++++++++++++++++++++++++++
 .logo{
     font-family: 'Courgette', cursive;
+}
+
+
+//+++++++++++++++++++++++++++
+// 2 navbar
+//+++++++++++++++++++++++++++
+
+/*Estilos boton menu personalizado*/
+
+#nav-main .icon-menu:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f0c9";
+    font-weight: 900;
+    color: #fff;
+    font-size: 2rem;
+}
+
+#nav-main .icon-close:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f00d";
+    position: relative;
+    font-weight: 900;
+    color: #fff;
+    left: .2rem;
+}
+
+
+button.navbar-toogler {
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: $color-secundario;
+    color: white;
+}
+
+button.navbar-toogler:hover,
+button.navbar-toogler:visited,
+button.navbar-toogler:focus{
+    border: $color-secundario;
+    outline: none;
+    }
+
+
+//estilos del boton menu para movil personalizado
+#nav-main .btn-menu::before{
+    font-family: 'Font Awesome 5 Free';
+    content: '\f00d';
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.navbar-nav .nav-link {
+   color: rgb(214, 211, 211);
+   padding: 1rem 1.5rem;
+   display: flex;
+   justify-content: space-between;
+   transition: all .5s ease;
+   border-radius: .5rem;
+}
+
+.navbar-nav .nav-link::after {
+   font-family: 'Font Awesome 5 Free';
+   content: '\f105';
+   font-weight: 900;
+   transition: all .5s ease;
+ }
+
+ .navbar-nav .nav-link:hover {
+     color: white;
+     background-color: $color-celeste;
+  }
+
+  .navbar-nav .nav-link:hover::after {
+    transform: rotateZ(180deg);
+ }
+ 
+ .navbar-nav .nav-link.active {
+    color: white;
+    background-color: $color-principal;
+
+ }
+
+//+++++++++++++++++++++++++++
+// section parallax
+//+++++++++++++++++++++++++++
+
+// oscurecemos la imagen de la seccion
+#pantalla-inicio{
+    position: relative;
+}
+
+#pantalla-inicio::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(38,143,255,.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+//+++++++++++++++++++++++++++
+// modal search
+//+++++++++++++++++++++++++++
+
+.modal-content {
+    background-color: $color-secundario;
+    color: white;
 }
 
 //+++++++++++++++++++++++++++
@@ -55,28 +223,42 @@ body{
 
 // Small (sm) devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-    body{
+  
+    section#litle-bar{
+        height: 54px;
+    }
+    .caja-responsive{
         background-color: red;
     }
 }
 
 // Medium (md) devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    body{
-        background-color: green;
+
+    .navbar-nav .nav-link::after {
+        content: '';
+      }
+
+    .navbar-nav .nav-link {
+        padding: .5rem 1rem;
+      }
+
+      .caja-responsive{
+        background-color:green;
     }
  }
 
 // Large (lg) devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    body{
+    
+    .caja-responsive{
         background-color: blue;
     }
  }
 
 // Extra large (xl) devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-    body{
+    .caja-responsive{
         background-color: aqua;
     }
  }
