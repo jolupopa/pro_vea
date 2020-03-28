@@ -21,6 +21,11 @@
      <!-- jarallax -->
      <link rel="stylesheet" href="css/jarallax.css">
 
+     
+     <!-- owl-carousel -->
+     <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.theme.default.min.css">
+
       <!-- estilos ves -->
       <link rel="stylesheet" href="css/estilos.css">
 
@@ -50,8 +55,6 @@
         </div>    
       </div>
      </section>  
-
-
      
     <nav id="nav-main" class="navbar navbar-expand-md bg-secundary text-white">
       <div class="container">
@@ -78,6 +81,7 @@
        </div>
       </div>
     </nav>
+
     <section id="pantalla-inicio" class="bg-dark text-white text-center py-5 jarallax" data-jarallax 
     data-speed=".6">
       <picture class="jarallax-img">
@@ -97,25 +101,167 @@
       </div>
 
     </section>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>
+    <section id="favoritos" class=" mt-5">
+      <div class="container-sm my-5">
+      <div class="d-flex justify-content-star my-3 align-items-center">
+        <h4 class="mx-2">Sitios Favoritos</h4>
+          <a data-toggle="collapse" href="#showFavorite" role="button" aria-expanded="false" aria-controls="showFavorite">
+            <span class="icon-left"></span>
+          </a>
+      </div> 
+      <div class="collapse" id="showFavorite">
+        <div class="row bg-primary">
+          <div class="col">
+                <div class="">
+                  <div class="foto-favorito" style="width: 100px; height: 100px;">
+                    <img src="img/favorites/6.jpg" class="img-fluid">
+                  </div>
+                  <div>
+                    <h6 class="">Casona Ganoza</h6>
+                    <h6>Trujillo/California</h6>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>
+    <section  id="destacados" class="container my-3">
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>
+      <div class="row mt-0 pt-0">
+        <div class="col-12 text-center">
+          <h2 class="h1 mt-5 text-muted">DESTACADOS</h2>
+        </div>
+        <div class="offset-10 col-2 d-flex justify-content-around text-primary">
+          <span class="owl-prev mr-5"><i class="fas fa-caret-left fa-3x"></i></span>
+          <span class="owl-next mr-5"><i class="fas fa-caret-right fa-3x"></i></span>
+        </div>
+      </div>    
+      <div class="owl-carousel owl-theme owl-loaded mt-3">
+        <div class="owl-stage-outer">
+          <div class="owl-stage">
+            <div class="card owl-item" style="width: 100%;">
+              <div class="box-label">
+                <span class="label-sale">En Venta</span>
+              </div>
+             
+              
+                <a href="#" class="thre-points dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">	<i class="fas fa-ellipsis-h"></i> </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="#">Añadir a Favoritos</a>
+                  <a class="dropdown-item" href="#">Comparar 2 selecciones</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Mostrar Detalles</a>
+                </div>
+              
+                
+              
+                <a href="#" class="see-more">	<i class="far fa-eye"></i> </a>
+                
+              
+              
+              <img src="img/properties/listing-01.jpg" class="card-img-top" alt="...">
+              <div class="card-body bg-soft">
+                <a href="#"><h4 class="text-muted">Condominio Los Angeles1</h4></a>
+                <a href="#" class="">
+                  <i class="fa fa-map-marker"></i>
+                  <span class="text-muted">Trujillo - Urb.California</span>  
+                </a>
+                <div class="py-3 border-top d-flex justify-content-around align-items-end">
+                  <span class=""><i class="fas fa-dollar-sign text-primary"></i> 1200</span>
+                  <span>120 <span class="text-primary">m2</span></span> 
+                  <span>2 <i class="fas fa-bed  text-primary"></i></span>
+                   <span>2 <i class="fas fa-bath text-primary"></i></span> 
+                   <span>2 <i class="fas fa-car text-primary"></i></span>
+                </div>
+                <div class="pt-3 border-top d-flex justify-content-between">
+                  <a href="#" class="card-link"><i class="fas fa-user-edit"></i>
+                     <span class="text-muted">Jose peres</span></a>
+                  <span class=""><i class="far fa-clock text-primary"></i> 4 dias</span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="card owl-item" style="width: 100%;">
+              <div class="box-label">
+                <span class="label-sale">En Venta</span>
+              </div>
+                <a href="#" class="thre-points dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">	<i class="fas fa-ellipsis-h"></i> </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="#">Añadir a Favoritos</a>
+                  <a class="dropdown-item" href="#">Comparar 2 selecciones</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Mostrar Detalles</a>
+                </div>
+                <a href="#" class="see-more">	<i class="far fa-eye"></i> </a>
+              <img src="img/properties/listing-01.jpg" class="card-img-top" alt="...">
+              <div class="card-body bg-soft">
+                <a href="#"><h4 class="text-muted">Condominio Los Angeles1</h4></a>
+                <a href="#" class="">
+                  <i class="fa fa-map-marker"></i>
+                  <span class="text-muted">Trujillo - Urb.California</span>  
+                </a>
+                <div class="py-3 border-top d-flex justify-content-around align-items-end">
+                  <span class=""><i class="fas fa-dollar-sign text-primary"></i> 1200</span>
+                  <span>120 <span class="text-primary">m2</span></span> 
+                  <span>2 <i class="fas fa-bed  text-primary"></i></span>
+                   <span>2 <i class="fas fa-bath text-primary"></i></span> 
+                   <span>2 <i class="fas fa-car text-primary"></i></span>
+                </div>
+                <div class="pt-3 border-top d-flex justify-content-between">
+                  <a href="#" class="card-link"><i class="fas fa-user-edit"></i>
+                     <span class="text-muted">Jose peres</span></a>
+                  <span class=""><i class="far fa-clock text-primary"></i> 4 dias</span>
+                </div>
+              </div>
+            </div>
+            <div class="card owl-item" style="width: 100%;">
+              <div class="box-label">
+                <span class="label-sale">En Venta</span>
+              </div>
+                <a href="#" class="thre-points dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">	<i class="fas fa-ellipsis-h"></i> </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="#">Añadir a Favoritos</a>
+                  <a class="dropdown-item" href="#">Comparar 2 selecciones</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Mostrar Detalles</a>
+                </div>
+                <a href="#" class="see-more">	<i class="far fa-eye"></i> </a>
+              <img src="img/properties/listing-01.jpg" class="card-img-top" alt="...">
+              <div class="card-body bg-soft">
+                <a href="#"><h4 class="text-muted">Condominio Los Angeles1</h4></a>
+                <a href="#" class="">
+                  <i class="fa fa-map-marker"></i>
+                  <span class="text-muted">Trujillo - Urb.California</span>  
+                </a>
+                <div class="py-3 border-top d-flex justify-content-around align-items-end">
+                  <span class=""><i class="fas fa-dollar-sign text-primary"></i> 1200</span>
+                  <span>120 <span class="text-primary">m2</span></span> 
+                  <span>2 <i class="fas fa-bed  text-primary"></i></span>
+                   <span>2 <i class="fas fa-bath text-primary"></i></span> 
+                   <span>2 <i class="fas fa-car text-primary"></i></span>
+                </div>
+                <div class="pt-3 border-top d-flex justify-content-between">
+                  <a href="#" class="card-link"><i class="fas fa-user-edit"></i>
+                     <span class="text-muted">Jose peres</span></a>
+                  <span class=""><i class="far fa-clock text-primary"></i> 4 dias</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>		
+      </div>
+    </section>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo harum, sequi animi est facere ad ullam tempore deserunt autem necessitatibus eum quibusdam praesentium unde doloremque veritatis sint libero alias.</p>
+  
 
+  
 
 		<!-- Modal -->
 	<div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="titleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+		<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
 			<h5 class="modal-title" id="titleModalLabel">Busca tu inmueble deseado:</h5>
@@ -143,6 +289,7 @@
     <script src="js/bootstrap.min.js" ></script>
     <script src="js/jarallax.min.js" ></script>
     <script src="js/picturefill.min.js" ></script>
+    <script src="vendor/owl-carousel/owl.carousel.min.js" ></script>
     
 
     <script src="js/scripts.js"></script>

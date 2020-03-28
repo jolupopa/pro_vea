@@ -14,6 +14,7 @@ $color-secundario: #1B5098;
 $color-texto: #2A2A33;
 $color-contenedor: #F9F9FB;
 $color-celeste:  rgb(149, 207, 240);
+$color-muted: #6c757d;
 
 $color-boton-normal: $color-principal;
 $color-boton-active: $color-principal;
@@ -30,6 +31,7 @@ html{
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: $color-texto;
+    height: 10000px;
 }
 .bg-secundary{
     background-color: $color-secundario;
@@ -206,6 +208,156 @@ button.navbar-toogler:focus{
     right: 0;
     bottom: 0;
 }
+
+
+//+++++++++++++++++++++++++++
+// section favoritos
+//+++++++++++++++++++++++++++
+
+
+
+#favoritos .icon-left:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f105";
+    font-weight: 900;
+    color:$color-principal;
+    font-size: 3rem;
+}
+
+#favoritos .icon-down:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f107";
+    position: relative;
+    font-weight: 900;
+    font-size: 3rem;
+    color: $color-principal;
+    left: .2rem;
+}
+
+//+++++++++++++++++++++++++++
+// section destacados 
+//+++++++++++++++++++++++++++
+.box-label {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    right: 0;
+    width: 100%;
+    display: block;
+    font-size: 13px;
+    padding: 0px;
+    overflow: hidden;
+    height: 100px;
+    z-index: 0;
+}
+
+.label-sale{
+        background-color: rgba(239, 15, 24,.5);
+        color: #fff;
+        float: left;
+        transform: rotate(-45deg);
+        left: -67px;
+        top: 17px;
+        position: relative;
+        text-align: center;
+        width: 200px;
+        font-size: 12.5px;
+        margin: 0;
+}
+
+.thre-points,
+.see-more {
+    position: absolute;
+    left: 85%;
+    top: 5%;
+    background-color: transparent;
+    border: 0px;
+    color: white;
+    padding: 0 3px;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.see-more{
+    left: 85%;
+    top: 55%;
+}
+.see-more:hover{
+    color: $color-secundario;
+}
+
+#destacados .card-body{
+    border-bottom: 1px solid $color-principal;
+}
+.owl-prev,
+.owl-next{
+    cursor: pointer;
+}
+
+#destacados .card-body a{
+    text-decoration: none;  
+}
+
+#destacados .thre-points:hover,
+#destacados .thre-points::selection{
+    color: $color-secundario !important; 
+}
+
+
+
+#destacados h4:hover{
+    
+    color: black !important;
+}
+
+#destacados span.text-muted:hover{
+    color: black !important;
+    font-weight: bold;
+
+}
+
+//droptown de menu tres puntos
+#destacados .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: 0;
+    border-right:0 transparent;
+    border-bottom: 0;
+    border-left: 0 solid transparent;
+}
+
+#destacados .dropdown-toggle {
+    left: 85%;
+    top: 5%;
+}
+
+
+#destacados  .dropdown-menu{
+background-color: $color-secundario;
+}
+
+#destacados .dropdown-item{
+    color: white;
+    
+}
+
+#destacados .dropdown-item:hover{
+    background-color: $color-celeste;
+    border-radius: .5rem;
+}
+
+
+
+//+++++++++++++++++++++++++++
+// seccion servicios
+//+++++++++++++++++++++++++++
+
+
+
+
 //+++++++++++++++++++++++++++
 // modal search
 //+++++++++++++++++++++++++++
@@ -215,6 +367,24 @@ button.navbar-toogler:focus{
     color: white;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //+++++++++++++++++++++++++++
 // media query
 //+++++++++++++++++++++++++++
@@ -223,12 +393,17 @@ button.navbar-toogler:focus{
 
 // Small (sm) devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  
+   // corrige el error en responsive
     section#litle-bar{
         height: 54px;
     }
     .caja-responsive{
         background-color: red;
+    }
+
+    .modal-content {
+       
+       
     }
 }
 
@@ -243,9 +418,21 @@ button.navbar-toogler:focus{
         padding: .5rem 1rem;
       }
 
-      .caja-responsive{
+    .caja-responsive{
         background-color:green;
     }
+   
+    .thre-point{
+        left: 85%;
+        top: 40%;
+        font-size: 2.5rem;
+    }
+
+    .see-more{
+        left: 85%;
+        top: 46%;
+    }
+    
  }
 
 // Large (lg) devices (desktops, 992px and up)
@@ -254,6 +441,10 @@ button.navbar-toogler:focus{
     .caja-responsive{
         background-color: blue;
     }
+    .see-more{
+        left: 85%;
+        top: 44%;
+    }
  }
 
 // Extra large (xl) devices (large desktops, 1200px and up)
@@ -261,4 +452,6 @@ button.navbar-toogler:focus{
     .caja-responsive{
         background-color: aqua;
     }
+
+
  }
