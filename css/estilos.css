@@ -12,6 +12,9 @@ body {
 .bg-secundary {
   background-color: #1B5098; }
 
+.bg-contenedor {
+  background-color: #F9F9FB; }
+
 .text-primary {
   color: #006AFF; }
 
@@ -261,9 +264,20 @@ button.navbar-toogler:focus {
   background-color: #95cff0;
   border-radius: .5rem; }
 
+.box-service {
+  height: 15rem;
+  border-bottom: 1px solid #006AFF;
+  border-right: 1px solid #006AFF; }
+
+#servicios div a {
+  text-decoration: none; }
+
 .modal-content {
   background-color: #1B5098;
   color: white; }
+
+.text-modal {
+  font-size: 18px; }
 
 @media (min-width: 576px) {
   section#litle-bar {
@@ -289,6 +303,9 @@ button.navbar-toogler:focus {
   .see-more {
     left: 85%;
     top: 46%; } }
+.text-modal {
+  font-size: 16px; }
+
 @media (min-width: 992px) {
   .caja-responsive {
     background-color: blue; }
