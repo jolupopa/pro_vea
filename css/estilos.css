@@ -9,6 +9,10 @@ body {
   color: #2A2A33;
   height: 10000px; }
 
+h1,
+a:hover {
+  text-decoration: none; }
+
 .bg-secundary {
   background-color: #1B5098; }
 
@@ -341,6 +345,9 @@ button.navbar-toogler:focus {
 .parent:focus .child:before {
   display: block; }
 
+#articulos .card-footer {
+  border-top: 1px solid #006AFF; }
+
 .modal-content {
   background-color: #1B5098;
   color: white; }
@@ -371,10 +378,10 @@ button.navbar-toogler:focus {
 
   .see-more {
     left: 85%;
-    top: 46%; } }
-.text-modal {
-  font-size: 16px; }
+    top: 46%; }
 
+  .btn {
+    width: 15rem; } }
 @media (min-width: 992px) {
   .caja-responsive {
     background-color: blue; }

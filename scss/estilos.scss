@@ -33,6 +33,10 @@ body{
     color: $color-texto;
     height: 10000px;
 }
+h1,
+a:hover{
+    text-decoration: none;
+}
 .bg-secundary{
     background-color: $color-secundario;
 }
@@ -447,12 +451,14 @@ background-color: $color-secundario;
     display: block;
   }
 
- 
 
+//+++++++++++++++++++++++++++
+// sección articulos
+//+++++++++++++++++++++++++++ 
 
-  
-
-
+#articulos .card-footer {
+    border-top: 1px solid $color-principal;
+}
 
 
 
@@ -535,12 +541,12 @@ background-color: $color-secundario;
         top: 46%;
     }
     
+    .btn{
+        width: 15rem;
+    }
  }
-// tamaño de fuentes en modal
- .text-modal{
-    font-size: 16px;
 
-}
+ 
 
 // Large (lg) devices (desktops, 992px and up)
 @media (min-width: 992px) {
