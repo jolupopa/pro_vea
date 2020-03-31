@@ -16,6 +16,8 @@ $color-texto: #2A2A33;
 $color-contenedor: #F9F9FB;
 $color-celeste:  rgb(149, 207, 240);
 $color-muted: #6c757d;
+$color-danger: rgb(247, 8, 8);
+$color-dangerhover:  rgb(207, 57, 7);
 
 $color-boton-normal: $color-principal;
 $color-boton-active: $color-principal;
@@ -70,8 +72,19 @@ a:hover{
     transition: all .5s ease;
 }
 
+.btn-danger {
+    color: #fff;
+    background-color: $color-danger;
+    border-color: $color-danger;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .5s ease;
+}
+
 // efectos de caja para los botones
-.btn-primary::before{
+.btn-primary::before,
+.btn-danger::before{
     content: "";
     z-index: -1;
     width: 0;
@@ -82,7 +95,10 @@ a:hover{
     left: 50%;
     transform: skew(45deg,0);
     transition: all .5s ease;
+}
 
+.btn-danger::before{
+    background: $color-danger;
 }
 
 
@@ -90,19 +106,41 @@ a:hover{
     background-color: $color-boton-hover !important;
 }
 
+.btn-danger:hover {
+    background-color: white !important;
+}
+
 .btn-primary:hover::before {
     width: 150%;
     left: -30%;
 }
+
+.btn-danger:hover::before {
+    width: 150%;
+    left: -30%;
+}
+
+
 .btn-primary:active{
     background-color: $color-boton-active !important;
     border-color: $color-boton-active;
+}
+.btn-danger:active{
+    background-color: $color-danger !important;
+    border-color: $color-danger;
 }
 
 .btn-primary:focus {
     color: #fff;
     background-color: $color-boton-normal;
     border-color: $color-boton-normal;
+    box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);
+}
+
+.btn-danger:focus {
+    color: #fff;
+    background-color: $color-danger;
+    border-color: $color-danger;
     box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);
 }
 
@@ -681,21 +719,6 @@ background-color: $color-secundario;
     background-color: $color-secundario;
     color: white;
 }
-.text-modal{
-    font-size: 18px;
-
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -766,11 +789,60 @@ background-color: $color-secundario;
 
         width: 94%;    
     }
-    
+  
+    // modifica botones de navegación
+    nav#nav-main .nav-link{
+        color: white;
+        border-radius: .8rem;
+        padding: .6rem 1rem;
+        font-weight: bold;
+        background-color: $color-boton-normal;
+        border-color: $color-boton-normal;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        transition: all .5s ease;
+        margin-left: .5rem;
+        margin-right: .5rem;
+
+    }
+
+    nav#nav-main .nav-link::before{
+        content: "";
+        z-index: -1;
+        width: 0;
+        height: 100%;
+        background: $color-boton-active;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: skew(45deg,0);
+        transition: all .5s ease;
+    }
+
+
+
+    nav#nav-main .nav-link:hover{
+        background-color: white !important;
+        color: white !important;
+        border-top: 1px solid white !important;
+        border-bottom: 1px solid white !important;
+    }
+
+    nav#nav-main .nav-link:hover::before{
+        width: 150%;
+        left: -30%;
+    }
+
+
+    nav#nav-main .nav-link.active{
+        color: $color-principal;
+        background-color: White;
+        border-bottom: 2px solid $color-principal;
+        border-top: 2px solid $color-principal;
+    }
+
  }
-
- 
-
 // Large (lg) devices (desktops, 992px and up)
 @media (min-width: 992px) {
     
