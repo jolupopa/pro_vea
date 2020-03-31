@@ -19,10 +19,6 @@
   <!-- Font Awesome 5 -->
   <link rel="stylesheet" href="css/all.min.css">
 
-  <!-- jarallax -->
-  <link rel="stylesheet" href="css/jarallax.css">
-
-
   <!-- owl-carousel -->
   <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.theme.default.min.css">
@@ -38,7 +34,7 @@
     <div class="text-center">
       <a href="#">
         <h1 class="logo text-primary py-2">VeaInmuebles</h1>
-    </a>
+      </a>
     </div>
   </section>
 
@@ -48,16 +44,18 @@
         <div class="col-auto">
           <a href="#">
             <h1 class="logo text-primary py-2">VeaInmuebles</h1>
-         </a>
+          </a>
         </div>
-        <div class="col-auto ml-auto">
-          <i class="fab fa-whatsapp fa-2x text-secundary"></i>
-          <span class="font-weight-bold h5 ml-2 text-primary">+51-044-916245396</span>
+        <div class="col-auto ml-auto text-primary">
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <i class="fab fa-whatsapp fa-2x"></i>
+            <span class="font-weight-bold h5 ml-2">+51-044-916245396</span>
+          </a>
         </div>
-        <div class="col-auto">
-          <a href="" data-toggle="modal" data-target="#modalContacto">          <i class="far fa-envelope fa-2x text-secundary"></i>
-          <span class="text-primary font-weight-bold ml-2 h5 ">jlportilla76@gmail.com</spanp>
-        </a>
+        <div class="col-auto text-primary">
+          <a href="" data-toggle="modal" data-target="#modalContacto"> <i class="far fa-envelope fa-2x"></i>
+            <span class="font-weight-bold ml-2 h5 ">jlportilla76@gmail.com</spanp>
+          </a>
 
         </div>
       </div>
@@ -72,48 +70,207 @@
         <span class="icon-menu"></span>
       </button>
 
-      <a href="#" class="order-md-1 ml-auto text-white" data-toggle="modal" data-target="#modalSearch">
-        <i class="fas fa-search fa-2x"></i>
-      </a>
-      <a href="#" class="btn btn-primary order-md-2 ml-5 mr-2">Ingresar</a>
-      <a href="#" class="btn btn-primary order-md-3">Registrar</a>
+
+      <a href="login.html" class="btn btn-primary order-md-2 ml-auto mr-2">Ingresar</a>
+      <a href="register.html" class="btn btn-primary order-md-3">Registrar</a>
 
       <div class="collapse navbar-collapse" id="menu-main">
         <ul class="navbar-nav mt-4 mt-md-0">
           <li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="nav-link active">Inicio</a></li>
-          <li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="nav-link">Nosotros</a></li>
-          <li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="nav-link">Agentes</a></li>
-          <li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="nav-link">Servicios</a></li>
-          <li class="nav-item mb-1 mb-md-0 mr-md-0"><a href="#" class="nav-link">Contactar</a></li>
+          <li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="btn nav-link">Nosotros</a></li>
+          <li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="btn nav-link">Agentes</a></li>
+          <li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="btn nav-link">Servicios</a></li>
+          <li class="nav-item mb-1 mb-md-0 mr-md-0"><a href="#" class="btn nav-link">Contactar</a></li>
         </ul>
       </div>
     </div>
   </nav>
+ 
+  <section id="parallax" class="parallax-efect">
 
-  <section id="pantalla-inicio" class="bg-dark text-white text-center py-5 jarallax"    data-jarallax data-speed=".6">
-    <picture class="jarallax-img">
-      <source media="(min-width:1200px)" srcset="images/fondo-te-ayudamos-xl.jpg">
-      <source media="(min-width:768px)" srcset="images/fondo-te-ayudamos-md.jpg">
-      <img srcset="images/fondo-te-ayudamos.jpg" alt="Fondo como podemos ayudarte" class="w-100">
-    </picture>
-    <div class="container">
-      <div class="row py-5">
-        <div class="col">
-          <h1>Encuentra tu lugar soñado para vivir </h1>
-          <p>Te ayudamos a ubicar la mejor opcion de busqueda del mercado inmobiliario actualizado diariamente y
-            contacta con un asesor </p>
-
-          <a href="" class="btn btn-primary">Buscar</a>
+    <div id="search" class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h1 class="text-white font-weight-light">Encuentra la <span class="font-weight-bold">Vivienda</span> de tus
+            sueños.
+          </h1>
+          <p class="lead text-white">Ubica, reserva y realiza una visita asistida por un asesor.
+          </p>
         </div>
       </div>
-    </div>
 
+
+      <!-- Main Search Container -->
+      <!-- main-search-container > container-search -->
+      <div class="container-search pt-3">
+
+        <div class="row">
+          <div class="col-12 col-md-8 offset-md-2">
+            <!-- main-search-form > form-search -->
+            <form class="form-search">
+              <!-- search-type > type-searchs -->
+              <div class="type-searchs">
+                <label class="active">
+                  <input class="first-tab" name="tab" checked="checked" type="radio">
+                  En venta</label>
+                <label><input name="tab" type="radio">En Alquiler</label>
+
+
+                <!-- search-type-arrow > search-figure -->
+                <div class="search-figure"></div>
+              </div>
+              <!-- main-search-box > box-search -->
+              <div class="box-search">
+
+                <div class="form-row ">
+                  <div class="col-6 mb-3">
+                    <label for="ciudad">Ciudad</label>
+                    <select class="custom-select" id="ciudad">
+                      <option selected disabled value="">Selecciona...</option>
+                      <option>Trujillo</option>
+                      <option>Piura</option>
+                      <option>Chiclayo</option>
+                      <option>Lima</option>
+                      <option>Arequipa</option>
+                    </select>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <label for="zona">Zona</label>
+                    <select class="custom-select" id="zona">
+                      <option selected disabled value="">Selecciona...</option>
+                      <option>Trujillo</option>
+                      <option>Piura</option>
+                      <option>Chiclayo</option>
+                      <option>Lima</option>
+                      <option>Arequipa</option>
+                    </select>
+                  </div>
+                  <div class="col-6">
+                    <label for="tipo">Tipo de Inmueble</label>
+                    <select class="custom-select" id="tipo">
+                      <option selected disabled value="">Selecciona...</option>
+                      <option>Apartamentos</option>
+                      <option>Casas</option>
+                      <option>Comerciales</option>
+                      <option>Garages</option>
+                      <option>Terrenos</option>
+                    </select>
+                  </div>
+                  <div class="col-6 col">
+                    <label for="precio">Precio</label>
+                    <select class="custom-select" id="precio">
+                      <option selected disabled value="">Selecciona...</option>
+                      <option>100000</option>
+                      <option>200000</option>
+                      <option>300000</option>
+                      <option>400000</option>
+                      <option>+500000</option>
+                    </select>
+
+                  </div>
+                </div>
+                <div class="row my-5  align-items-center">
+                  <div class="col-6">
+                    <!-- more-search-options-trigger > more-less-trigger -->
+                    <a href="#" class="more-less-trigger" data-open-title="Mas opciones" data-close-title="Cerrar"></a>
+                  </div>
+                  <div class="col-6 text-lg-right">
+                    <button type="submit" class="btn btn-lg btn-block btn-primary">Buscar</button>
+                  </div>
+
+                </div>
+
+
+
+
+                <!-- More Search Options -->
+
+
+                <div class="more-options col-12">
+                  <div class="more-options-container form-row mx-0">
+
+                    <div class="col-4">
+                      <label for="cuartos">Cuartos</label>
+                      <select class="custom-select" id="cuartos">
+                        <option>cualquier #</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>+5</option>
+                      </select>
+                    </div>
+
+                    <div class="col-4">
+                      <label for="banos">Baños</label>
+                      <select class="custom-select" id="banos">
+                        <option>cualquier #</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>+5</option>
+                      </select>
+                    </div>
+
+                    <div class="col-4">
+                      <label for="cochera">Cocheras</label>
+                      <select class="custom-select" id="cochera">
+                        <option>cualquier #</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>+5</option>
+                      </select>
+                    </div>
+
+
+                    <div class="row justify-content-between flex-fill">
+
+                      <div class="col-auto custom-control custom-checkbox custom-control-inline py-4">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Para estrenar</label>
+                      </div>
+                      <div class="col-auto custom-control custom-checkbox custom-control-inline py-4">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">Zona campestre</label>
+                      </div>
+                      <div class="col-auto custom-control custom-checkbox custom-control-inline py-4">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <label class="custom-control-label" for="customCheck3">Cerca al mar</label>
+                      </div>
+                      <div class="col-auto custom-control custom-checkbox custom-control-inline py-4">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                        <label class="custom-control-label" for="customCheck4">Condominio Privado</label>
+                      </div>
+                      <div class="col-auto custom-control custom-checkbox custom-control-inline py-4">
+                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                        <label class="custom-control-label" for="customCheck5">Publicado max 15 dias</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- More Search Options / End -->
+
+              </div>
+              <!-- Box / End -->
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- Main Search Container / End -->
+
+
+    </div>
   </section>
 
   <section id="favoritos" class=" mt-5">
     <div class="container-sm my-5">
-      <div class="d-flex justify-content-star my-3 align-items-center">
-        <h4 class="mx-2">Sitios Favoritos</h4>
+      <div class="d-flex justify-content-star mt-3 align-items-center">
+        <h4 class="mx-2"><i class="fas fa-th"></i> Sitios Favoritos</h4>
         <a data-toggle="collapse" href="#showFavorite" role="button" aria-expanded="false" aria-controls="showFavorite">
           <span class="icon-left"></span>
         </a>
@@ -136,11 +293,11 @@
     </div>
   </section>
 
-  <section id="destacados" class="container mt3 pb-5 mb-5">
+  <section id="destacados" class="container pb-5 mb-5">
 
     <div class="row mt-0 pt-0">
       <div class="col-12 text-center">
-        <h2 class="h1 mt-5 text-muted">DESTACADOS</h2>
+        <h2 class="h1 text-muted">DESTACADOS</h2>
       </div>
       <div class="offset-10 col-2 d-flex justify-content-around text-primary">
         <span class="owl-prev mr-5"><i class="fas fa-caret-left fa-3x"></i></span>
@@ -150,51 +307,7 @@
     <div class="owl-carousel owl-theme owl-loaded mt-3">
       <div class="owl-stage-outer">
         <div class="owl-stage">
-          <div class="card owl-item" style="width: 100%;">
-            <div class="box-label">
-              <span class="label-sale">En Venta</span>
-            </div>
-
-
-            <a href="#" class="thre-points dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false"> <i class="fas fa-ellipsis-h"></i> </a>
-            <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item" href="#">Añadir a Favoritos</a>
-              <a class="dropdown-item" href="#">Comparar 2 selecciones</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Mostrar Detalles</a>
-            </div>
-
-
-
-            <a href="#" class="see-more"> <i class="far fa-eye"></i> </a>
-
-
-
-            <img src="img/properties/listing-01.jpg" class="card-img-top" alt="...">
-            <div class="card-body bg-soft">
-              <a href="#">
-                <h4 class="text-muted">Condominio Los Angeles1</h4>
-              </a>
-              <a href="#" class="">
-                <i class="fa fa-map-marker"></i>
-                <span class="text-muted">Trujillo - Urb.California</span>
-              </a>
-              <div class="py-3 border-top d-flex justify-content-around align-items-end">
-                <span class=""><i class="fas fa-dollar-sign text-primary"></i> 1200</span>
-                <span>120 <span class="text-primary">m2</span></span>
-                <span>2 <i class="fas fa-bed  text-primary"></i></span>
-                <span>2 <i class="fas fa-bath text-primary"></i></span>
-                <span>2 <i class="fas fa-car text-primary"></i></span>
-              </div>
-              <div class="pt-3 border-top d-flex justify-content-between">
-                <a href="#" class="card-link"><i class="fas fa-user-edit"></i>
-                  <span class="text-muted">Jose peres</span></a>
-                <span class=""><i class="far fa-clock text-primary"></i> 4 dias</span>
-              </div>
-            </div>
-
-          </div>
+          
           <div class="card owl-item" style="width: 100%;">
             <div class="box-label">
               <span class="label-sale">En Venta</span>
@@ -209,28 +322,27 @@
             </div>
             <a href="#" class="see-more"> <i class="far fa-eye"></i> </a>
             <img src="img/properties/listing-01.jpg" class="card-img-top" alt="...">
-            <div class="card-body bg-soft">
+            <div class="card-body bg-contenedor">
               <a href="#">
-                <h4 class="text-muted">Condominio Los Angeles1</h4>
-              </a>
-              <a href="#" class="">
+                <p class="text-muted h4"><i class="fas fa-text-width mr-2 text-primary"></i>Condominio Californiaxx</p>
                 <i class="fa fa-map-marker"></i>
-                <span class="text-muted">Trujillo - Urb.California</span>
+                <span class="text-muted">Trujillo - xxUrb.California</span>
               </a>
               <div class="py-3 border-top d-flex justify-content-around align-items-end">
-                <span class=""><i class="fas fa-dollar-sign text-primary"></i> 1200</span>
-                <span>120 <span class="text-primary">m2</span></span>
-                <span>2 <i class="fas fa-bed  text-primary"></i></span>
-                <span>2 <i class="fas fa-bath text-primary"></i></span>
-                <span>2 <i class="fas fa-car text-primary"></i></span>
+                <span class=""><i class="fas fa-dollar-sign"></i> 1200</span>
+                <span>120 <span class="font-weight-bold">m2</span></span>
+                <span>2 <i class="fas fa-bed  "></i></span>
+                <span>2 <i class="fas fa-bath "></i></span>
+                <span>2 <i class="fas fa-car "></i></span>
               </div>
               <div class="pt-3 border-top d-flex justify-content-between">
                 <a href="#" class="card-link"><i class="fas fa-user-edit"></i>
                   <span class="text-muted">Jose peres</span></a>
-                <span class=""><i class="far fa-clock text-primary"></i> 4 dias</span>
+                <span class=""><i class="far fa-clock"></i> 4 dias</span>
               </div>
             </div>
           </div>
+
           <div class="card owl-item" style="width: 100%;">
             <div class="box-label">
               <span class="label-sale">En Venta</span>
@@ -245,28 +357,63 @@
             </div>
             <a href="#" class="see-more"> <i class="far fa-eye"></i> </a>
             <img src="img/properties/listing-01.jpg" class="card-img-top" alt="...">
-            <div class="card-body bg-soft">
+            <div class="card-body bg-contenedor">
               <a href="#">
-                <h4 class="text-muted">Condominio Los Angeles1</h4>
-              </a>
-              <a href="#" class="">
+                <p class="text-muted h4"><i class="fas fa-text-width mr-2 text-primary"></i>Condominio Californiaxx</p>
                 <i class="fa fa-map-marker"></i>
-                <span class="text-muted">Trujillo - Urb.California</span>
+                <span class="text-muted">Trujillo - xxUrb.California</span>
               </a>
               <div class="py-3 border-top d-flex justify-content-around align-items-end">
-                <span class=""><i class="fas fa-dollar-sign text-primary"></i> 1200</span>
-                <span>120 <span class="text-primary">m2</span></span>
-                <span>2 <i class="fas fa-bed  text-primary"></i></span>
-                <span>2 <i class="fas fa-bath text-primary"></i></span>
-                <span>2 <i class="fas fa-car text-primary"></i></span>
+                <span class=""><i class="fas fa-dollar-sign"></i> 1200</span>
+                <span>120 <span class="font-weight-bold">m2</span></span>
+                <span>2 <i class="fas fa-bed  "></i></span>
+                <span>2 <i class="fas fa-bath "></i></span>
+                <span>2 <i class="fas fa-car "></i></span>
               </div>
               <div class="pt-3 border-top d-flex justify-content-between">
                 <a href="#" class="card-link"><i class="fas fa-user-edit"></i>
                   <span class="text-muted">Jose peres</span></a>
-                <span class=""><i class="far fa-clock text-primary"></i> 4 dias</span>
+                <span class=""><i class="far fa-clock"></i> 4 dias</span>
               </div>
             </div>
           </div>
+
+          <div class="card owl-item" style="width: 100%;">
+            <div class="box-label">
+              <span class="label-sale">En Venta</span>
+            </div>
+            <a href="#" class="thre-points dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false"> <i class="fas fa-ellipsis-h"></i> </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="#">Añadir a Favoritos</a>
+              <a class="dropdown-item" href="#">Comparar 2 selecciones</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Mostrar Detalles</a>
+            </div>
+            <a href="#" class="see-more"> <i class="far fa-eye"></i> </a>
+            <img src="img/properties/listing-01.jpg" class="card-img-top" alt="...">
+            <div class="card-body bg-contenedor">
+              <a href="#">
+                <p class="text-muted h4"><i class="fas fa-text-width mr-2 text-primary"></i>Condominio Californiaxx</p>
+                <i class="fa fa-map-marker"></i>
+                <span class="text-muted">Trujillo - xxUrb.California</span>
+              </a>
+              <div class="py-3 border-top d-flex justify-content-around align-items-end">
+                <span class=""><i class="fas fa-dollar-sign"></i> 1200</span>
+                <span>120 <span class="font-weight-bold">m2</span></span>
+                <span>2 <i class="fas fa-bed  "></i></span>
+                <span>2 <i class="fas fa-bath "></i></span>
+                <span>2 <i class="fas fa-car "></i></span>
+              </div>
+              <div class="pt-3 border-top d-flex justify-content-between">
+                <a href="#" class="card-link"><i class="fas fa-user-edit"></i>
+                  <span class="text-muted">Jose peres</span></a>
+                <span class=""><i class="far fa-clock"></i> 4 dias</span>
+              </div>
+            </div>
+          </div>
+
+         
         </div>
       </div>
     </div>
@@ -287,38 +434,48 @@
         </div>
 
         <div class="col-6 col-md-4 mb-3">
+          <a href="" data-toggle="modal" data-target="#modalService2">
           <div class="text-primary bg-white box-service">
             <i class="far fa-handshake fa-4x pt-5 pb-3"></i>
             <p class="h5 text-muted">Compra y Venta <br>de Inmuebles.</p>
           </div>
+        </a>
         </div>
 
         <div class="col-6 col-md-4 mb-3">
+          <a href="" data-toggle="modal" data-target="#modalService3">
           <div class="text-primary bg-white box-service">
             <i class="fas fa-house-damage fa-4x pt-5 pb-3"></i>
             <p class="h5 text-muted">Saneamiento<br>Inmobiliario.</p>
           </div>
+        </a>
         </div>
 
         <div class="col-6 col-md-4 mb-3">
+          <a href="" data-toggle="modal" data-target="#modalService4">
           <div class="text-primary bg-white box-service">
             <i class="fas fa-chart-line fa-4x pt-5 pb-3"></i>
             <p class="h5 text-muted">Gestion en<br>SEO Inmobiliario.</p>
           </div>
+        </a>
         </div>
 
         <div class="col-6 col-md-4 mb-3">
+          <a href="" data-toggle="modal" data-target="#modalService5">
           <div class="text-primary bg-white box-service">
             <i class="fas fa-hand-holding fa-4x pt-5 pb-3"></i>
             <p class="h5 text-muted">Elaboración de Presupuestos<br>para Construcción.</p>
           </div>
+        </a>
         </div>
 
         <div class="col-6 col-md-4 mb-3">
+          <a href="" data-toggle="modal" data-target="#modalService6">
           <div class="text-primary bg-white box-service">
             <i class="far fa-object-group fa-4x pt-5 pb-3"></i>
             <p class="h5 text-muted">Diseño y Creación <br>de Landing Page.</p>
           </div>
+        </a>
         </div>
       </div>
     </div>
@@ -463,208 +620,296 @@
               <div class="parent card col-4 px-0">
                 <a href="agent-detail.html">
                   <div class="child">
-                  <img class="card-img-top" src="img/users//4.jpg" alt="">
+                    <img class="card-img-top" src="img/users//4.jpg" alt="">
+                  </div>
+                </a>
               </div>
-              </a>
+
+              <div class="parent card col-4 px-0">
+                <a href="agent-detail.html">
+                  <div class="child">
+                    <img class="card-img-top" src="img/users//5.jpg" alt="">
+                  </div>
+                </a>
+              </div>
+
+              <div class="parent card col-4 px-0">
+                <a href="agent-detail.html">
+                  <div class="child">
+                    <img class="card-img-top" src="img/users//6.jpg" alt="">
+                  </div>
+                </a>
+              </div>
             </div>
 
-            <div class="parent card col-4 px-0">
-              <a href="agent-detail.html">
-                <div class="child">
-                <img class="card-img-top" src="img/users//5.jpg" alt="">
+            <div class="row">
+              <div class="parent card col-4 px-0">
+                <a href="agent-detail.html">
+                  <div class="child">
+                    <img class="card-img-top" src="img/users//7.jpg" alt="">
+                  </div>
+                </a>
+              </div>
+
+              <div class="parent card col-4 px-0">
+                <a href="agent-detail.html">
+                  <div class="child">
+                    <img class="card-img-top" src="img/users//8.jpg" alt="">
+                  </div>
+                </a>
+              </div>
+
+              <div class="parent card col-4 px-0">
+                <a href="agent-detail.html">
+                  <div class="child">
+                    <img class="card-img-top" src="img/users//9.jpg" alt="">
+                  </div>
+                </a>
+              </div>
+
             </div>
-            </a>
           </div>
-
-          <div class="parent card col-4 px-0">
-            <a href="agent-detail.html">
-              <div class="child">
-              <img class="card-img-top" src="img/users//6.jpg" alt="">
-          </div>
-          </a>
         </div>
       </div>
-
-      <div class="row">
-        <div class="parent card col-4 px-0">
-          <a href="agent-detail.html">
-            <div class="child">
-            <img class="card-img-top" src="img/users//7.jpg" alt="">
-        </div>
-        </a>
-      </div>
-
-      <div class="parent card col-4 px-0">
-        <a href="agent-detail.html">
-          <div class="child">
-          <img class="card-img-top" src="img/users//8.jpg" alt="">
-      </div>
-      </a>
-    </div>
-
-    <div class="parent card col-4 px-0">
-      <a href="agent-detail.html">
-        <div class="child">
-        <img class="card-img-top" src="img/users//9.jpg" alt="">
-    </div>
-    </a>
-    </div>
-
-    </div>
-    </div>
-    </div>
-    </div>
     </div>
   </section>
 
   <section id="testimonios" class="bg-contenedor my-5">
 
-		<div class="container text-center">
-			<h2 class="py-5 h1 text-muted">TESTIMONIOS</h2>
-			<p class=" h4 pb-4 text-muted">Nos comentan sobre <span class="text-primary font-weight-bold ">VEAINMUEBLES</span>.</p>
-			<div id="carouselTestimonio" class="carousel slide" data-ride="carousel">
-				
-				<div class="carousel-inner">
+    <div class="container text-center">
+      <h2 class="py-5 h1 text-muted">TESTIMONIOS</h2>
+      <p class=" h4 pb-4 text-muted">Nos comentan sobre <span
+          class="text-primary font-weight-bold ">VeaInmuebles</span>.</p>
+      <div id="carouselTestimonio" class="carousel slide" data-ride="carousel">
 
-					<div class="carousel-item active mb-5 text-center">
-						<div class="row d-flex align-items-center">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active mb-5 text-center">
+            <div class="row d-flex align-items-center">
               <div class="col-3 col-md-2 offset-md-1 offset-lg-2">
                 <img src="img/users/1.jpg" alt="" class="img-fluid rounded-circle" style="width: 8rem;">
               </div>
               <div class="col-9 col-md-8 col-lg-6">
-                <p class="h5"><i class="fas fa-quote-left fa-flip-vertical text-primary mr-2" aria-hidden="true"></i> Me fascina poder hacer negocios con este sistema de gestion <i class="fas fa-quote-right text-primary ml-2" aria-hidden="true"></i></p>
+                <p class="h5"><i class="fas fa-quote-left fa-flip-vertical text-muted mr-2" aria-hidden="true"></i> Me
+                  fascina poder hacer negocios con este sistema de gestion <i class="fas fa-quote-right text-muted ml-2"
+                    aria-hidden="true"></i></p>
               </div>
-							<div class="col col-md-8 offset-md-2 text-right">
-								<span>Ben Kingsly</span><br><span>CEO - Royals Group</span>
-							</div>
-            </div> 
+              <div class="col col-md-8 offset-md-2 text-right">
+                <span>Ben Kingsly</span><br><span>CEO - Royals Group</span>
+              </div>
+            </div>
           </div>
 
           <div class="carousel-item mb-5 text-center">
-						<div class="row d-flex align-items-center">
+            <div class="row d-flex align-items-center">
               <div class="col-3 col-md-2 offset-md-1 offset-lg-2">
                 <img src="img/users/2.jpg" alt="" class="img-fluid rounded-circle" style="width: 8rem;">
               </div>
               <div class="col-9 col-md-8 col-lg-6">
-                <p class="h5"><i class="fas fa-quote-left fa-flip-vertical text-primary mr-2" aria-hidden="true"></i> Lo mejor que he probado en el mundo inmobiliario <i class="fas fa-quote-right text-primary ml-2" aria-hidden="true"></i></p>
+                <p class="h5"><i class="fas fa-quote-left fa-flip-vertical text-muted mr-2" aria-hidden="true"></i> Lo
+                  mejor que he probado en el mundo inmobiliario <i class="fas fa-quote-right text-muted ml-2"
+                    aria-hidden="true"></i></p>
               </div>
-							<div class="col-8 offset-2 text-right">
-								<span>José Portilla</span><br><span>Admin - VeaInmuebles SAC</span>
-							</div>
-            </div> 
+              <div class="col-8 offset-2 text-right">
+                <span>José Portilla</span><br><span>Admin - VeaInmuebles SAC</span>
+              </div>
+            </div>
           </div>
 
           <div class="carousel-item mb-5 text-center">
-						<div class="row d-flex align-items-center">
+            <div class="row d-flex align-items-center">
               <div class="col-3 col-md-2 offset-md-1 offset-lg-2">
                 <img src="img/users/3.jpg" alt="" class="img-fluid rounded-circle" style="width: 8rem;">
               </div>
               <div class="col-9 col-md-8 col-lg-6">
-                <p class="h5"><i class="fas fa-quote-left fa-flip-vertical  text-primary mr-2" aria-hidden="true"></i>  Mis ingresos aumentaron por el uso de este medio. <i class="fas fa-quote-right  text-primary ml-2" aria-hidden="true"></i></p>
+                <p class="h5"><i class="fas fa-quote-left fa-flip-vertical  text-muted mr-2" aria-hidden="true"></i>
+                  Mis ingresos aumentaron por el uso de este medio. <i class="fas fa-quote-right  text-muted ml-2"
+                    aria-hidden="true"></i></p>
               </div>
-							<div class="col-8 offset-2 text-right">
-								<span>Carlos Romer</span><br><span>Agente - Broker Inmobiliario</span>
-							</div>
-            </div> 
+              <div class="col-8 offset-2 text-right">
+                <span>Carlos Romer</span><br><span>Agente - Broker Inmobiliario</span>
+              </div>
+            </div>
           </div>
 
-          
-				</div>
-			</div>
-		</div>
-		
+
+        </div>
+      </div>
+    </div>
+
   </section>
-  
-	<section id="contactar" class="my-5 pt-3">
-		<div class="container bg-contenedor text-center pb-3">
-			<h2 class="h1 text-muted py-5">Deseas ofrecer tu propiedad en Venta o Alquiler ?</h2>
-			<p class=" h5 pb-3 ">LLamanos o envianos un correo para programar la visita de un asesor.</p>
+
+  <section id="contactar" class="my-5 pt-3">
+    <div class="container bg-contenedor text-center pb-3">
+      <h2 class="h1 text-muted py-5">Deseas ofrecer tu propiedad en Venta o Alquiler ?</h2>
+      <p class=" h5 pb-3 ">LLamanos o envianos un correo a <span class="text-primary">VeaInmuebles</span> para programar
+        la visita de un asesor.</p>
       <div class="text-center pb-3 d-flex justify-content-center align-items-center">
-        <span><i class="fab fa-whatsapp fa-4x text-primary" aria-hidden="true"></i> </span>
+        <span><i class="fab fa-whatsapp fa-4x text-muted" aria-hidden="true"></i> </span>
         <span class="h3 text-muted ml-3">+051-947-989-007</span>
       </div>
 
+
+
       <form class="mx-5 pb-5">
-				<div class="row justify-content-md-center">
-					<div class="col-md-2">
-						<a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#modalContacto"><i class="far fa-envelope mr-2" aria-hidden="true"></i>  Contactanos</a>
-					</div>
-				</div>   
-			</form>
-		</div>
+        <a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#modalContacto">
+          Formulario de datos</a>
+      </form>
+
+
+    </div>
   </section>
-  
 
-	<section id="articulos" class="bg-contenedor py-5">
-		<div class="container">
+
+  <section id="articulos" class="bg-contenedor py-5">
+    <div class="container">
       <h2 class="h1 text-muted text-center pt-2">ARTICULOS</h2>
-			<div class="row py-3">
-				<div class="col-12 col-md-5">
-					<div class="list-group">
-						<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-							<div class="d-flex w-100 justify-content-between">
-								<h5 class="mb-1">List group item heading</h5>
-								<small>3 days ago</small>
-							</div>
-							<p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-							<small>Donec id elit non mi porta.</small>
-						</a>
-						<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-							<div class="d-flex w-100 justify-content-between">
-								<h5 class="mb-1">List group item heading</h5>
-								<small class="text-muted">3 days ago</small>
-							</div>
-							<p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-							<small class="text-muted">Donec id elit non mi porta.</small>
-						</a>
-						<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-							<div class="d-flex w-100 justify-content-between">
-								<h5 class="mb-1">List group item heading</h5>
-								<small class="text-muted">3 days ago</small>
-							</div>
-							<p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-							<small class="text-muted">Donec id elit non mi porta.</small>
-						</a>
-					</div>
-				</div>
-				<div class="col-12 col-md-2  align-self-center text-center d-none d-md-block">
+      <div class="row py-3">
+        <div class="col-12 col-md-5">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5>
+                <small>3 days ago</small>
+              </div>
+              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
+                blandit.</p>
+              <small>Donec id elit non mi porta.</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5>
+                <small class="text-muted">3 days ago</small>
+              </div>
+              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
+                blandit.</p>
+              <small class="text-muted">Donec id elit non mi porta.</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5>
+                <small class="text-muted">3 days ago</small>
+              </div>
+              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
+                blandit.</p>
+              <small class="text-muted">Donec id elit non mi porta.</small>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-2  align-self-center text-center d-none d-md-block">
 
-					<i class="fa fa-edit fa-3x text-primary" aria-hidden="true"></i>
-				</div>
-				<div class="col-12 col-md-5">
-					<div class="list-group">
-						<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-							<div class="d-flex w-100 justify-content-between">
-								<h5 class="mb-1">List group item heading</h5>
-								<small>3 days ago</small>
-							</div>
-							<p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-							<small>Donec id elit non mi porta.</small>
-						</a>
-						<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-							<div class="d-flex w-100 justify-content-between">
-								<h5 class="mb-1">List group item heading</h5>
-								<small class="text-muted">3 days ago</small>
-							</div>
-							<p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-							<small class="text-muted">Donec id elit non mi porta.</small>
-						</a>
-						<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-							<div class="d-flex w-100 justify-content-between">
-								<h5 class="mb-1">List group item heading</h5>
-								<small class="text-muted">3 days ago</small>
-							</div>
-							<p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-							<small class="text-muted">Donec id elit non mi porta.</small>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="card-footer bg-contenedor text-right">
-				<a class="btn btn-primary" href="#">Mostrar mas</a>
-			</div>
-		</div>
-	</section>
+          <i class="fa fa-edit fa-3x text-muted" aria-hidden="true"></i>
+        </div>
+        <div class="col-12 col-md-5">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5>
+                <small>3 days ago</small>
+              </div>
+              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
+                blandit.</p>
+              <small>Donec id elit non mi porta.</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5>
+                <small class="text-muted">3 days ago</small>
+              </div>
+              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
+                blandit.</p>
+              <small class="text-muted">Donec id elit non mi porta.</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5>
+                <small class="text-muted">3 days ago</small>
+              </div>
+              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
+                blandit.</p>
+              <small class="text-muted">Donec id elit non mi porta.</small>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer bg-contenedor text-center">
+        <a class="btn btn-primary btn-lg btn-block" href="#">Mostrar más</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="suscripcion" class=" my5 pb-5  pt-3">
+    <div class="container bg-contenedor">
+      <h2 class="h1 text-muted text-center pt-5 pb-4">Registrate para recibir nuestro <span>Magazine Digital</span></h2>
+      <p class=" h5 text-center mx-2">Recibe oportunamente desde <span class="text-primary">VeaInmuebles</span> los
+        últimos proyectos en desarrollo en la ciudad; y todas las nuevas ofertas del mercado inmobiliario en tu
+        bandeja de correo registrada.</p>
+      <form class="mx-5">
+        <div class="form-row justify-content-md-center">
+          <div class="col-12 col-md-5 mb-3 mt-3">
+            <label class="sr-only" for="name">Nombre</label>
+            <input type="text" class="form-control form-control-lg" id="name" placeholder="Ingrese su nombre completo"
+              value="" required>
+          </div>
+          <div class="col-12 col-md-5 mb-3 mt-3">
+            <label class="sr-only" for="correo">Correo</label>
+            <input type="email" class="form-control form-control-lg" id="correo" placeholder="Su correo: ejemplo@com"
+              value="" required>
+          </div>
+          <div class="col-md-2 pb-3 my-5 my-md-3 text-center">
+            <button class="btn btn-primary btn-lg btn-block" type="submit"> Enviar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer id="footer" class="bg-white text-truncate">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="columna-inclinada col-12 col-md-6 col-xl-5 py-2">
+          <div class="row">
+
+            <div class="col-12">
+              <h2 class="text-white font-weight-bold h1">Soporte:</h2>
+            </div>
+
+            <div class="col-4 text-white text-center">
+              <i class="fas fa-tools fa-4x"></i>
+            </div>
+
+            <div class="col-8  text-white pl-0">
+              <h3>(511) 388-7813</h3>
+              <p>Ayuda disponible: L - V de 8:00 am a 7.00pm.</p>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-7 py-2 text-center text-md-right small">
+          <ul class="enlaces-secundario list-unstyled d-inline-flex text-uppercase ">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Políticas de Privacidad</a></li>
+          </ul>
+          <p>©2020. Todos los derechos reservados.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- eliminar este codigo de testeo -->
+  <div class="caja-responsive text-center fixed-bottom">
+    <h4 class="d-sm-none"> 0 =< extra-smoll < 576px</h4>
+    <h4 class="d-none d-sm-block d-md-none text-white">576px =< smoll < 768px</h4>
+    <h1 class="d-none d-md-block d-lg-none text-white"> 768px =< mediun < 992px </h1>
+    <h1 class="d-none d-lg-block d-xl-none text-white"> 992px =< large < 1200px</h1>
+    <h1 class="d-none d-xl-block"> 1200px =< extra-large </h1>
+  </div>
 
 
 
@@ -696,22 +941,130 @@
   </div>
 
   <!-- Modal Service -->
-  <div class="modal" id="modalService1" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+  <div class="modal fade" id="modalService1" tabindex="-1" role="dialog" aria-labelledby="modalService1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalService1Label">marketing y Publicidad 24x7d todo el año.</h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
         <div class="modal-body">
-          <p class="pt-5 text-modal">
-            Todos los dias se publican y ofrecen nuevas oportunidades de vivienda, comercio, e inversion en el mundo
+          Todos los dias se publican y ofrecen nuevas oportunidades de vivienda, comercio, e inversion en el mundo
             inmobiliario, veainmuebles te da la oportunidad de estar actualizado con los ultimos reportes inmobiliarios.
-          </p>
-          <button type="button" class="btn btn-danger btn-block mt-5 mb-2" data-dismiss="modal">Cerrar</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalService2" tabindex="-1" role="dialog" aria-labelledby="modalService2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalService2Label"> Compra y Venta de Inmuebles.</h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Optimiza al maximo tu rendimiento en la gestion de compra y/o venta a traves del asesoramiento de uno de nuestros asesores de veaInmuebles quienes trabajan con el principio de honestidad en el tramite necesario a realizar en cada operación de tu negocio.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalService3" tabindex="-1" role="dialog" aria-labelledby="modalService3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalService3Label"> Saneamiento Inmobiliario.</h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Asesoramiento para sanear el inmueble, mediante la evaluacion del caso dandole el diagnostico de los tramites necesarios asi como de los profesionales adecuados que garanticen un resultado eficiente en los procedimientos necesarios .
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalService4" tabindex="-1" role="dialog" aria-labelledby="modalService4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalService4Label"> Gestion en SEO
+            Inmobiliario.</h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Obten anuncios y publicidad premiun las cuales seran ubicadas en anuncios destacados y slider de inicio respectivamente, para promocionar tu inmueble y obtener ganacias a traves del posicionamiento en los principales navegadores atraves del manejo del SEO Optimización en los motores de busqueda.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalService5" tabindex="-1" role="dialog" aria-labelledby="modalService5Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalService5Label"> Elaboración de presupuestos para construcción</h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Elaboracón de presupuestos de proyectos de construccón o remodelación con sus respectivos analisis de costos unitarios y relación de materiales a utilizarse luego de analizar la propuesta a desarrollar.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalService6" tabindex="-1" role="dialog" aria-labelledby="modalService6Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalService6Label"> Diseño y creación de Landing Page</h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Desarrollamos paginas de aterrizaje o Landing Page, segun lo solicitado por el cliente y el producto a desarrollar, la cual podra ser redireccionada a su dominio de la empresa cliente.
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+         
         </div>
       </div>
     </div>
   </div>
 
   <!-- Modal Contacto -->
-  <div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+  <div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle"
+    aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content bg-secundary">
         <div class="modal-header">
@@ -753,7 +1106,7 @@
                     <label class="custom-control-label" for="radio-vender">Vender</label>
                   </div>
 
-                </div>	
+                </div>
               </div>
               <div class="form-group col-sm-6">
                 <label for="inputProperty">Elige el tipo de Inmueble</label>
@@ -778,24 +1131,26 @@
               <div class="form-group col-sm-6">
                 <label for="inputZone">Zona:</label>
                 <input type="text" class="form-control" id="inputZone" placeholder="Zona">
-              </div>	
-            </div>						
+              </div>
+            </div>
             <div class="form-group">
-              <label for="textArea">Expresa algun detalle relevante ó alguna información adicional del inmueble en tu Comentario</label>
-              <textarea class="form-control" id="textArea" rows="3" placeholder="Escribe tu comentario aca ..."></textarea>
+              <label for="textArea">Expresa algun detalle relevante ó alguna información adicional del inmueble en tu
+                Comentario</label>
+              <textarea class="form-control" id="textArea" rows="3"
+                placeholder="Escribe tu comentario aca ..."></textarea>
             </div>
             <div class="form-group">
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="captcha">
-              <label class="custom-control-label" for="captcha">Acepto me contactem</label>
+                <label class="custom-control-label" for="captcha">Acepto me contactem</label>
               </div>
-            </div>          
+            </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
           <button type="submit" class="btn btn-lg btn-primary">Enviar</button>
           </form>
-        
+
 
         </div>
       </div>
@@ -809,24 +1164,9 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/jarallax.min.js"></script>
-  <script src="js/picturefill.min.js"></script>
   <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
-
-
+  <script src="js/picturefill.min.js"></script>
   <script src="js/scripts.js"></script>
-
-
-
-
-  <!-- eliminar este codigo de testeo -->
-  <div class="caja-responsive text-center fixed-bottom">
-    <h4 class="d-sm-none"> 0 =< extra-smoll < 576px</h4>
-        <h4 class="d-none d-sm-block d-md-none text-white">576px =< smoll < 768px</h4>
-            <h1 class="d-none d-md-block d-lg-none text-white"> 768px =< mediun < 992px </h1>
-                <h1 class="d-none d-lg-block d-xl-none text-white"> 992px =< large < 1200px</h1>
-                    <h1 class="d-none d-xl-block"> 1200px =< extra-large </h1>
-  </div>
 </body>
 
 </html>

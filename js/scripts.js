@@ -1,4 +1,14 @@
 $(function(){
+
+	// remove change size screen >= md
+		if(window.innerWidth >= 768){
+			$('.btn').removeClass('btn-block');
+		}
+		
+
+    //--------->
+    //menu movi
+    //--------->
     //add and remove class btn menu
     $('#nav-main span.icon-menu').click(function(){
         $('#nav-main span.icon-menu').toggleClass('icon-close');  
@@ -8,11 +18,98 @@ $(function(){
         $('#nav-main span.icon-menu').removeClass('icon-close');
         $('div#menu-main').removeClass('show');
      });
+
+     //------------------------->
+     // menu principal de buscar
+     //------------------------->
+
+     	// Init
+	if ($(".form-search").length){
+		searchTypeButtons();
+		$(window).on('load resize', function() { searchTypeButtons(); });
+	}
+
+
+
+
+	/*----------------------------------------------------*/
+	/*  Search Type Buttons
+	/*----------------------------------------------------*/
+	function searchTypeButtons() {
+
+		// Radio attr reset
+		$('.type-searchs label.active input[type="radio"]').prop('checked',true);
+
+		// Positioning indicator arrow
+		var buttonAncho = $('.type-searchs label.active').width();
+		var figureLen = $('.type-searchs label.active').position().left;
+		$('.search-figure').css('left', figureLen + (buttonAncho/2) );
+
+		$('.type-searchs label').on('change', function() {
+			$('.type-searchs input[type="radio"]').parent('label').removeClass('active');
+			$('.type-searchs input[type="radio"]:checked').parent('label').addClass('active');
+
+			// Positioning indicator arrow
+			var buttonAncho = $('.type-searchs label.active').width();
+			var figureLen = $('.type-searchs label.active').position().left;
+
+			$('.search-figure').css({
+				'left': figureLen + (buttonAncho/2),
+				'transition':'left 0.4s cubic-bezier(.87,-.41,.19,1.44)'
+			});
+		});
+
+	}
+
+	
+
+
+	/*----------------------------------------------------*/
+	/* Advanced Search Button
+	/*----------------------------------------------------*/
+	$('#map-container .adv-search-btn').on('click', function(e){
+
+		if ( $(this).is(".active") ) {
+
+			$(this).removeClass("active");
+			$(".main-search-container").removeClass("active");
+			setTimeout( function() {
+				$("#map-container.homepage-map").removeClass("overflow")
+			}, 0);
+
+		} else {
+
+			$(this).addClass("active");
+			$(".main-search-container").addClass("active");
+			setTimeout( function() {
+				$("#map-container.homepage-map").addClass("overflow")
+			}, 400);
+
+		}
+
+		e.preventDefault();
+	});
+
+
+	/*----------------------------------------------------*/
+    /*  Searh Form More Options
+    /*----------------------------------------------------*/
+    $('.more-less-trigger').on('click', function(e){
+    	e.preventDefault();
+    	$('.more-options, .more-less-trigger').toggleClass('active');
+    	$('.more-options.relative').animate({height: 'toggle', opacity: 'toggle'}, 300);
+    });
+
+     //----------------------------->
+     //menu favoritos
      // open y close window favorites
+     //------------------------------>
      $('#favoritos span.icon-left').click(function(){
         $('#favoritos span.icon-left').toggleClass('icon-down');  
     });
-
+    //-------------->
+    // carousel
+    //-------------->
     var owl = $("#destacados .owl-carousel").owlCarousel({
         loop:true,
     	margin:25,
@@ -31,13 +128,11 @@ $(function(){
     		}
     	}
     });
-
     $('.owl-next').on("click", function (e) {
     	e.preventDefault();
     	owl.trigger('next.owl.carousel');
     	
     });
-
     $('.owl-prev').on("click", function (e) {
     	e.preventDefault();
     	owl.trigger('prev.owl.carousel', [300]);
