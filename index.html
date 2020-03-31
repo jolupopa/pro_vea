@@ -267,7 +267,7 @@
     </div>
   </section>
 
-  <section id="favoritos" class=" mt-5">
+  <section id="favoritos" class=" my-5">
     <div class="container-sm my-5">
       <div class="d-flex justify-content-star mt-3 align-items-center">
         <h4 class="mx-2"><i class="fas fa-th"></i> Sitios Favoritos</h4>
@@ -275,17 +275,56 @@
           <span class="icon-left"></span>
         </a>
       </div>
-      <div class="collapse" id="showFavorite">
-        <div class="row bg-primary">
-          <div class="col">
-            <div class="">
+      <div class="collapse  bg-contenedor" id="showFavorite">
+        <div class="row my-5 py-5">
+         
+          <div class="col-3 item">
+            <div class="item-favorito bg-white">
               <div class="foto-favorito" style="width: 100px; height: 100px;">
                 <img src="img/favorites/6.jpg" class="img-fluid">
               </div>
-              <div>
-                <h6 class="">Casona Ganoza</h6>
+              <h6 class="">Casona Ganoza</h6>
                 <h6>Trujillo/California</h6>
+              <div>
               </div>
+            </div>
+          </div>
+
+          <div class="col-3 item">
+            <div class="item-favorito bg-white">
+              <div class="foto-favorito" style="width: 100px; height: 100px;">
+                <img src="img/favorites/6.jpg" class="img-fluid">
+              </div>
+              <h6 class="">Casona Ganoza</h6>
+                <h6>Trujillo/California</h6>
+              <div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 item">
+            <div class="item-favorito bg-white">
+              <div class="foto-favorito" style="width: 100px; height: 100px;">
+                <img src="img/favorites/6.jpg" class="img-fluid">
+              </div>
+              <h6 class="">Casona Ganoza</h6>
+                <h6>Trujillo/California</h6>
+              <div>
+              </div>
+            </div>
+          </div>
+
+        
+
+
+          <div class="col-auto mr-auto">
+            <a href="#" class="thre-points dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false"> <i class="fas fa-ellipsis-h"></i> </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="#">Añadir a Comparación</a>
+              <a class="dropdown-item" href="#">Ver Detalles</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Eliminar</a>
             </div>
           </div>
         </div>
@@ -752,7 +791,7 @@
 
 
       <form class="mx-5 pb-5">
-        <a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#modalContacto">
+        <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalContacto">
           Formulario de datos</a>
       </form>
 
@@ -833,7 +872,7 @@
         </div>
       </div>
       <div class="card-footer bg-contenedor text-center">
-        <a class="btn btn-primary btn-lg btn-block" href="#">Mostrar más</a>
+        <a class="btn btn-primary btn-lg" href="#">Mostrar más</a>
       </div>
     </div>
   </section>
@@ -857,7 +896,7 @@
               value="" required>
           </div>
           <div class="col-md-2 pb-3 my-5 my-md-3 text-center">
-            <button class="btn btn-primary btn-lg btn-block" type="submit"> Enviar</button>
+            <button class="btn btn-primary btn-lg" type="submit"> Enviar</button>
           </div>
         </div>
       </form>
@@ -1159,7 +1198,9 @@ aria-hidden="true">
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/jquery.stickit.min.js"></script>
   <script src="js/picturefill.min.js"></script>
+
   <script src="js/scripts.js"></script>
 </body>
 

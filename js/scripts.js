@@ -1,14 +1,21 @@
 $(function(){
 
-	// remove change size screen >= md
-		if(window.innerWidth >= 768){
-			$('.btn').removeClass('btn-block');
-		}
+	//-------------------------------->
+    //modifica botones responsive
+    //-------------------------------->
+		$( window ).resize(function() {
+			if(window.innerWidth >= 768){
+				$('#suscripcion .btn, #articulos .btn, #contactar .btn').removeClass('btn-block');
+			}
+			if(window.innerWidth < 768){
+				$('#suscripcion .btn, #articulos .btn, #contactar .btn').addClass('btn-block');
+			}	
+		});
 		
 
-    //--------->
-    //menu movi
-    //--------->
+    //------------------------------------>
+	//cambio de icono y cierre de menu movil
+	//------------------------------------>
     //add and remove class btn menu
     $('#nav-main span.icon-menu').click(function(){
         $('#nav-main span.icon-menu').toggleClass('icon-close');  
@@ -139,6 +146,9 @@ $(function(){
     	
     });
     
-    
+	//fijar el menu
+	$("#nav-main").stickit({
+		zindex:200
+	});
 
 })

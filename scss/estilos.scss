@@ -252,7 +252,7 @@ button.navbar-toogler:focus{
 	justify-content: center;
     align-items: center;
     position: relative;
-	z-index: 999;
+	z-index: 10;
 }
 
 .parallax-efect::before{
@@ -279,9 +279,7 @@ button.navbar-toogler:focus{
 	
 }
 
-.box-search button.btn.btn-lg.btn-block.btn-primary{
-   
-}
+
 
 /* Search Type Buttons*/
 .type-searchs {

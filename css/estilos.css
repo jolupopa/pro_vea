@@ -194,7 +194,7 @@ button.navbar-toogler:focus {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  z-index: 999; }
+  z-index: 10; }
 
 .parallax-efect::before {
   content: "";
