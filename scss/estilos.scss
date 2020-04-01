@@ -718,6 +718,28 @@ background-color: $color-secundario;
     color: white;
 }
 
+//+++++++++++++++++++++++++++
+// seccion logueo  login
+//+++++++++++++++++++++++++++
+
+#logueo .icon-eye:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f06e";
+    font-weight: 900;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#logueo .icon-eye-slash:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f070";
+    position: relative;
+    font-weight: 900;
+    color: #fff;
+    font-size: 1rem;
+   
+}
+
 
 
 
@@ -823,8 +845,8 @@ background-color: $color-secundario;
     nav#nav-main .nav-link:hover{
         background-color: white !important;
         color: white !important;
-        border-top: 1px solid white !important;
-        border-bottom: 1px solid white !important;
+       
+        
     }
 
     nav#nav-main .nav-link:hover::before{

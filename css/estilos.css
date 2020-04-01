@@ -577,6 +577,21 @@ div.more-options:before {
   background-color: #1B5098;
   color: white; }
 
+#logueo .icon-eye:before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f06e";
+  font-weight: 900;
+  color: #fff;
+  font-size: 1rem; }
+
+#logueo .icon-eye-slash:before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f070";
+  position: relative;
+  font-weight: 900;
+  color: #fff;
+  font-size: 1rem; }
+
 @media (min-width: 576px) {
   section#litle-bar {
     height: 54px; }
@@ -645,9 +660,7 @@ div.more-options:before {
 
   nav#nav-main .nav-link:hover {
     background-color: white !important;
-    color: white !important;
-    border-top: 1px solid white !important;
-    border-bottom: 1px solid white !important; }
+    color: white !important; }
 
   nav#nav-main .nav-link:hover::before {
     width: 150%;
@@ -674,5 +687,4 @@ div.more-options:before {
 
   div.more-options:before {
     width: 96.1%; } }
-
 /*# sourceMappingURL=estilos.css.map */

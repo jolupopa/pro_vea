@@ -11,6 +11,8 @@ $(function(){
 				$('#suscripcion .btn, #articulos .btn, #contactar .btn').addClass('btn-block');
 			}	
 		});
+
+
 		
 
     //------------------------------------>
@@ -24,7 +26,25 @@ $(function(){
     $('#menu-main li a').click(function(){
         $('#nav-main span.icon-menu').removeClass('icon-close');
         $('div#menu-main').removeClass('show');
-     });
+	 });
+
+	 //change icon-see-password of login form
+      // true defaul icon-eye-slash
+      var setOpcion = true; 
+	  $('#logueo span.see').click(function(){
+      if( setOpcion == true ){
+        $('#logueo span.see').addClass('icon-eye');
+        $('#logueo span.see').removeClass('icon-eye-slash');
+        setOpcion = false;
+        console.log('opcion 1');
+      }
+      else if( setOpcion  == false){
+        $('#logueo span.see').addClass('icon-eye-slash')
+        $('#logueo span.see').removeClass('icon-eye');
+        setOpcion = true;
+        console.log('opcion 2');
+      }
+    });
 
      //------------------------->
      // menu principal de buscar
