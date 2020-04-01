@@ -1,9 +1,6 @@
 <!doctype html>
 <html lang="es">
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.png" type="image/png">
@@ -25,56 +22,31 @@
   <link rel="stylesheet" href="css/estilos.css">
 
 
-
-
 	<title>Vea Inmuebles</title>
 </head>
 <body>
 
 	<!-- Section -->
-	<section id="logeo">
-		<div class="container my-5 py-5">
-			<div class="row d-flex">
-				<div class="col-12 col-md-6 order-md-1 align-self-center bg-contenedor">
+	<section class="min-vh-100 d-flex align-items-center">
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-md-6 text-center text-primary pt-4" style="font-size: 24px;">
+					<i class="fas fa-user-shield fa-10x"></i>
+				</div>
+				<div class="col-md-6">
 					<div class="text-center mt-4 mt-md-0">
-						<h1 class="font-weight-normal pt-5"><a href="index.html">VeaInmuebles</a></h1>
-						<h2 class="pt-2">Login</h2>
-						<p class="h5 text-muted pt-2">Puede ingresar a su cuenta a traves de su redes sociales.</p>
+						<h2 class="font-weight-normal">Unete a <a href="index.html">VeaInmuebles</a> !</h2>
+						<p class="text-gray mb-2">Disfruta de todos nuestros servicios disponibles. </p>
 					</div>
-					<div class="row text-center py-3">
-						<div class="col-4">
-							<a href="">
-								<button class="btn btn-danger">
-									<i class="fab fa-google-plus-g fa-2x"></i>
-								</button>
-							</a>
-						</div>
-						<div class="col-4">
-							<a href="">
-								<button class="btn btn-primary">
-									<i class="fab fa-facebook-f fa-2x"></i>
-								</button>
-							</a>
-						</div>
-						<div class="col-4">
-							<a href="">
-								<button class="btn btn-info">
-									<i class="fab fa-twitter fa-2x"></i>
-								</button>
-							</a>
-						</div>
-
-					</div>
+					
 					<span class="clearfix"></span>
-					<form class="row border-top text-primary pt-2">
-						<div class="col-10 offset-1">
-							<p class="text-center text-muted pt-3 h5">O ingrese con su correo y su clave</p>
-						</div>
+					<form class="row">
+						
 						<div class="form-group col-10 offset-1">
 							<div class="input-group">
 								<div class="input-group-prepend">
-									<span class="input-group-text bg-primary">
-										<i class="fas fa-at text-white"></i>
+									<span class="input-group-text">
+										<i class="fas fa-at"></i>
 									</span>
 								</div>
 								<input type="email" class="form-control" id="input-email" placeholder="Ingreso de correo electronico" required="">
@@ -83,41 +55,47 @@
 						<div class="form-group col-10 offset-1">
 							<div class="input-group">
 								<div class="input-group-prepend">
-									<span class="input-group-text bg-primary">
-										<i class="fas fa-key text-white"></i>
+									<span class="input-group-text">
+										<i class="fas fa-key"></i>
 									</span>
 								</div>
 								<input class="form-control" placeholder="Clave de seguridad" type="password" required="">
 								<div class="input-group-append">
-									<span class="input-group-text bg-primary">
-										<i class="fas fa-eye-slash text-white"></i>
+									<span class="input-group-text">
+										<i class="fas fa-eye-slash"></i>
 									</span>
 								</div>
 							</div>
 						</div>
+						<div class="form-group col-10 offset-1">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text">
+										<i class="fas fa-key"></i>
+									</span>
+								</div>
+								<input class="form-control" placeholder="Repite la Clave " type="password" required="">
+							</div>
+						</div>
+						<div class="my-4 col-10 offset-1">
+							<div class="form-check round-check mb-3">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox"> 
+									<span class="form-check-sign"></span>Estoy conforme con los 
+									<a href="legal.html">Terminos y Condiciones</a>
+								</label>
+							</div>
+						</div>
 						<div class="mt-4 col-10 offset-1">
-							<button type="submit" class="btn btn-lg btn-block btn-primary">Ingresar</button>
+							<button type="submit" class="btn btn-lg btn-block btn-primary">Crear Cuenta</button>
 						</div>
 					</form>
-					<div class="d-flex justify-content-between align-items-center my-5">
-						<span class="h5"><small>No estas registrado?</small> 
-							<a href="register.html" class="small font-weight-bold">Crea una cuenta</a>
-						</span>
-						<div>
-							<span class="h5">
-								<a href="forgot-password.html" class="small font-weight-bold text-right">Recupera tu clave?
-								</a>
-
-
-
-							</span>
-							
-						</div>
+					
+					<div class="my-4 text-center col-10 offset-1"><small>Ya tienes una cuenta?</small>
+						<a href="login.html" class="small font-weight-bold">Ingresa</a>
+						desde aca.
 					</div>
 					
-				</div>
-				<div class="col-12 d-none d-md-block col-md-6  col-md-display order-md-0 text-center text-primary align-self-center h1">
-					<i class="fas fa-user-lock fa-10x"></i>
 				</div>
 				
 			</div>
