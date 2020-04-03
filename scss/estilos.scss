@@ -487,6 +487,8 @@ div.more-options:before {
         margin: 0;
 }
 
+
+
 .thre-points,
 .see-more {
     position: absolute;
@@ -740,6 +742,193 @@ background-color: $color-secundario;
    
 }
 
+//+++++++++++++++++++++++++++
+// sidebar buscar- comparar
+//+++++++++++++++++++++++++++
+.contenedor-grid,
+.contenedor-list,
+.contenedor-buscar,
+.contenedor-comparar{
+	position: fixed;
+	top: 0;
+	transition: 0.4s ease-in-out;
+	height: 100vh;
+	background-color: #fff;
+	right: -320px;
+	width: 320px;
+	padding: 0;
+	z-index: 1010;
+	box-shadow: 0 0 25px rgba(0,0,0,0.1);
+}
+
+.box-buscar,
+.box-comparar {
+	overflow-y: scroll;
+	height: 100%;
+	width: 340px;
+}
+
+.contenedor-buscar.active,
+.contenedor-comparar.active{
+     right: 0;
+}
+
+
+/* Trigger */
+.btn-grid,
+.btn-list,
+.btn-buscar,
+.btn-comparar {
+	position: absolute;
+	top: 60%;
+	transform: translateY(-0%);
+	left: -3rem;
+	background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-list{
+    top: 20%;
+    left: -2.5rem;
+}
+
+.btn-grid{
+    top: 40%;
+    left: -2.5rem;
+}
+
+
+.btn-buscar{
+    left: -2.5rem;
+}
+.btn-comparar{
+    top: 80%;
+}
+
+
+.btn-grid:before{
+    content: "\f00a";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: $color-principal;
+	transition: 0.3s ease-in-out;
+
+}
+
+.btn-list:before{
+    content: "\f0ca";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: $color-principal;
+	transition: 0.3s ease-in-out;
+
+}
+
+
+
+.btn-buscar:before{
+    content: "\f00e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2rem;
+    color: $color-principal;
+	transition: 0.3s ease-in-out;
+
+}
+.btn-comparar:before {
+	content: "\f516";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2rem;
+    color: $color-principal;
+	transition: 0.3s ease-in-out;
+}
+
+.contenedor-buscar.active .btn-buscar:before,
+.contenedor-comparar.active .btn-comparar:before { 
+    display: none;
+ }
+
+
+/* Mobile Trigger */
+.close-mobilbtn {
+	position: absolute;
+	cursor: pointer;
+	font-size: 18px;
+    right: 30px;
+    height: 30px;
+	top: 26px;
+	color: #fff;
+	z-index: 100;
+    padding: 5px 0 5px 5px;
+    border: 1px solid red;
+	
+}
+
+.close-mobilbtn:before {
+    content: "\f00d";
+    font-family: 'Font Awesome 5 Free';
+    position: relative;
+    font-weight: 900;
+    color: #fff;
+}
+
+.caja-buscar,
+.caja-comparar {
+	padding: 30px;
+	padding-bottom: 0;
+}
+
+
+//===================================
+// property-th
+//===================================
+
+.property-th .card{
+    width: 100%;
+}
+
+.property-th div .c-img img{
+    width: 100%;
+}
+
+.property-th div .c-body{
+    width: 100%;
+}
+
+//===================================
+// property-th-list 
+//===================================
+
+.property-th-list .card{
+    width: 100%;
+}
+
+
+
+
+.property-th-list div.c-img.col-12{
+    max-width: 33.333333% !important;
+}
+
+.property-th-list div.c-body.col-12{
+    max-width: 66.666666% !important;
+}
+
+
+
+.property-th-list img{
+    width: 100%;
+}
+
+.property-th-list .card-body,
+.property-th-list .c-body{
+    width: 100%
+}
+
+
 
 
 
@@ -767,6 +956,8 @@ background-color: $color-secundario;
       div.more-options:before {
         width: 94.5%;    
     }
+
+   
 
 
 }
@@ -804,11 +995,7 @@ background-color: $color-secundario;
         transform: skewX(20deg); 
     }
     
-    // corrige ancho de caja
-    div.more-options:before {
-
-        width: 94%;    
-    }
+   
   
     // modifica botones de navegación
     nav#nav-main .nav-link{
@@ -862,6 +1049,9 @@ background-color: $color-secundario;
         border-top: 2px solid $color-principal;
     }
 
+    
+    
+
  }
 // Large (lg) devices (desktops, 992px and up)
 @media (min-width: 992px) {
@@ -874,11 +1064,28 @@ background-color: $color-secundario;
         top: 44%;
     }
 
-        // corrige ancho de caja
-        div.more-options:before {
+    // corrige ancho de caja
+    div.more-options:before {
 
             width: 95.1%;    
-        }
+    }
+
+    //===================================
+    // property-th-list 
+    //===================================
+
+    .property-th-list .card{
+        width: 540px;
+    }
+
+
+
+
+   
+    
+   
+
+  
         
  }
 
@@ -892,6 +1099,8 @@ background-color: $color-secundario;
 
         width: 96.1%;    
     }
+
+   
 
 
 

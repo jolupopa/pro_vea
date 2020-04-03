@@ -3,7 +3,7 @@ $(function(){
 	//-------------------------------->
     //modifica botones responsive
     //-------------------------------->
-		$( window ).resize(function() {
+		$(window).resize(function() {
 			if(window.innerWidth >= 768){
 				$('#suscripcion .btn, #articulos .btn, #contactar .btn').removeClass('btn-block');
 			}
@@ -170,5 +170,34 @@ $(function(){
 	$("#nav-main").stickit({
 		zindex:200
 	});
+
+	/*----------------------------------------------------*/
+	/*  sidebar buscar
+	/*----------------------------------------------------*/
+    $('.btn-buscar').on('click', function(){
+		$('.contenedor-buscar').toggleClass('active');
+		$('.contenedor-comparar').toggleClass('d-none');
+	});
+
+	$('#sidebar-buscar .close-mobilbtn').on('click', function(){
+		$('.contenedor-buscar').removeClass('active');
+		$('.contenedor-comparar').removeClass('d-none');
+	});
+
+	/*----------------------------------------------------*/
+	/*  sidebar comparar
+	/*----------------------------------------------------*/
+    $('.btn-comparar').on('click', function(){
+		$('.contenedor-comparar').toggleClass('active');
+		$('.contenedor-buscar').toggleClass('d-none');
+	});
+
+    $('#sidebar-comparar .close-mobilbtn').on('click', function(){
+		$('.contenedor-comparar').removeClass('active');
+		$('.contenedor-buscar').removeClass('d-none');
+	});
+
+	
+
 
 })
