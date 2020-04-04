@@ -852,7 +852,6 @@ background-color: $color-secundario;
  }
 
 
-/* Mobile Trigger */
 .close-mobilbtn {
 	position: absolute;
 	cursor: pointer;
@@ -906,9 +905,6 @@ background-color: $color-secundario;
     width: 100%;
 }
 
-
-
-
 .property-th-list div.c-img.col-12{
     max-width: 33.333333% !important;
 }
@@ -916,8 +912,6 @@ background-color: $color-secundario;
 .property-th-list div.c-body.col-12{
     max-width: 66.666666% !important;
 }
-
-
 
 .property-th-list img{
     width: 100%;
@@ -927,6 +921,56 @@ background-color: $color-secundario;
 .property-th-list .c-body{
     width: 100%
 }
+
+//+++++++++++++++++++++++++++
+// seccion detalle
+//+++++++++++++++++++++++++++
+
+
+// slider swiper
+#slider-swiper .container{
+    height: 100%;
+    background: black;
+    padding: 0;
+   }
+
+   .swiper-container {
+    width: 100%;
+    height: 400px;
+  
+  }
+
+  .swiper-container-thumb {
+    width: 100%;
+    height: 100px;
+    overflow-x: hidden;
+  
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .swiper-container .gallery-top {
+    height: 80%;
+    width: 100%;
+  }
+
+  .swiper-container .gallery-thumbs {
+    height: 20% !important;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.7;
+  }
+  .gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+  }
 
 
 
