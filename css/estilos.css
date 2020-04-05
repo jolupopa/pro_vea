@@ -771,6 +771,50 @@ div.more-options:before {
 .gallery-thumbs .swiper-slide-thumb-active {
   opacity: 1; }
 
+/*Personalizando el selector de fechas*/
+.picker__box {
+  border: 5px solid #006AFF; }
+
+.picker--focused .picker__day--selected,
+.picker__day--selected,
+.picker__day--selected:hover {
+  background: #006AFF;
+  color: #fff; }
+
+.picker__day--today:before {
+  border-top: .5em solid #ffffff; }
+
+.picker__select--month,
+.picker__select--year {
+  margin-top: -.5em;
+  padding: 0 .5rem;
+  border-radius: .5rem; }
+
+/*personalizando el selector de hora*/
+.picker--focused .picker__list-item--selected,
+.picker__list-item--selected,
+.picker__list-item--selected:hover {
+  background: #006AFF; }
+
+.picker__list-item--highlighted,
+.picker__list-item:hover {
+  border-color: #0055cc; }
+
+.picker__list {
+  padding: .5rem 0; }
+
+.picker--time .picker__button--clear {
+  color: #fff;
+  background: #ff520d;
+  border-radius: .5rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.picker__button--clear:before {
+  width: 0;
+  border-top: 0px solid #e20;
+  display: none; }
+
 @media (min-width: 576px) {
   section#litle-bar {
     height: 54px; }

@@ -26,6 +26,11 @@
    <!-- Link Swiper's CSS -->
    <link rel="stylesheet" href="css/swiper.min.css">
 
+   <!-- Link pickadatejs -->
+   <link rel="stylesheet" href="js/pickadatejs/themes/default.css">
+   <link rel="stylesheet" href="js/pickadatejs/themes/default.date.css">
+   <link rel="stylesheet" href="js/pickadatejs/themes/default.time.css">
+
   <!-- estilos ves -->
   <link rel="stylesheet" href="css/estilos.css">
 
@@ -97,7 +102,7 @@
 
       <h2 class="text-muted mt-5 text-center my-4">Titulo Condominio Californiaxx Condominio Californiaxx</h2>
 
-      <!--slider y detalles-->
+      <!--seccion slider y detalles-->
       <div class="row">
         <!--slider-->
         <div class="col-12 col-md-8">
@@ -142,35 +147,34 @@
         <!--detalles-->
         <div class="col-12 col-md-4  d-flex align-items-center">
           <div class="bg-contenedor">
-            <h2 class="pt-5 text-center">En Venta</h2>
-            <h3 class="text-muted ml-5">Precio: 12,000.00</h4>
-            <h4 class="text-muted ml-5">Detalles</h4>
-            <p class="text-muted mx-5">Ágata II, nombre del bungalow, está formado por 1 habitación, sala/cocina en un solo ambiente y baño.
-              Excelente bungalow de características únicas dentro de posada tranquila y privada, localizada en el centro de la ciudad.
-              Esta muito valorizada y cobizada por la cantidad de servicios que ofrece a sus visitantes.
-            </p>
-            <div class="mx-5 py-2 d-flex justify-content-between align-items-end">
-              <span>120 <span class="font-weight-bold text-primary">m2</span></span>
-              <span>2 <i class="fas fa-bed fa-2x text-primary"></i></span>
-              <span>2 <i class="fas fa-bath fa-2x text-primary"></i></span>
-              <span>2 <i class="fas fa-car fa-2x text-primary"></i></span>
+            <div class="pt-5 d-flex justify-content-between">
+              <span class="h4 ml-3">En Venta</span>
+              <span class="h5 text-muted mr-3">Precio: 12,000.00</span>
             </div>
-
-
-
+            <h4 class="text-muted ml-5">Resumen</h4>
+              <p class="text-muted mx-5 extracto">Ágata II, nombre del bungalow, está formado por 1    habitación, sala/cocina en un solo ambiente y baño.
+              Excelente bungalow de características únicas dentro de posada tranquila y privada, localizada en el centro de la ciudad.
+              </p>
+            <div class=" mx-5 py-2 d-flex justify-content-between">
+              <span class="d-block d-md-none d-lg-block">120 <span class="font-weight-bold text-primary">m2</span></span>
+              <span class="d-block d-md-none d-lg-block">2 <i class="fas fa-bed fa-2x text-primary"></i></span>
+              <span class="d-block d-md-none d-lg-block">2 <i class="fas fa-bath fa-2x text-primary"></i></span>
+              <span class="d-block d-md-none d-lg-block">2 <i class="fas fa-car fa-2x text-primary"></i></span>
+            </div>
+            <div class="text-right mx-5 pt-3 pb-2"><i class="far fa-clock mr-2"></i>Hace: 4 días</div>
           </div>
         </div>
       </div>
-
+      <!--seccion de tabs y publicidad-->
       <div class="row">  
         <!--enlaces tabs-->
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-lg-8">
         
             <div class="card text-center my-5" style="width: 100%;">
               <div class="card-header">
                 <ul class="nav nav-tabs " id="myTab" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link" id="caracter-tab" data-toggle="tab" href="#caracter" role="tab" aria-controls="caracter" aria-selected="false">Caracteristicas</a>
+                    <a class="nav-link" id="caracter-tab" data-toggle="tab" href="#caracter" role="tab" aria-controls="caracter" aria-selected="false">Detalle</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" id="comodo-tab" data-toggle="tab" href="#comodo" role="tab" aria-controls="comodo" aria-selected="false">Comodidades</a>
@@ -211,14 +215,14 @@
 
         </div>
         <!--publicidad-->
-        <div class="col-12 py-0  py-md-5 col-md-4 d-flex align-items-center">
+        <div class="col-12 py-0  py-md-5 col-lg-4 d-flex align-items-center">
           <div class=" bg-contenedor py-0 h-75 w-100 d-flex justify-content-center align-items-center ">
-           <h1 class="d-none d-md-block bg-primary text-white"> Aca publicidad </h1>
+           <h1 class="d-none d-lg-block bg-primary text-white"> Aca publicidad </h1>
           </div>
         </div>
       </div>
 
-      <!--agente-->
+      <!--seccion agente-->
       <div class="row">
         <!--profile-->
         <div class="col-12 col-md-4 bg-contenedor">
@@ -282,13 +286,24 @@
               
               <form>
                 <div class="form-row">
-                  <div class="form-group col-6">
+                  <div class="form-group col-12">
                     <label for="dia">El día</label>
-                    <input type="date" name="dia" class="form-control form-control-lg" id="diae">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text"  for="dia"><i class="far fa-calendar-alt fa-2x text-primary"></i></label>
+                      </div>
+                        <input type="date" name="dia" class="datepicker form-control form-control-lg" id="dia">
+                    </div>
                   </div>
-                  <div class="form-group col-6">
+
+                  <div class="form-group col-12">
                     <label for="hora">La hora</label>
-                    <input type="time" name="hora" class="form-control" id="hora" value="12.00.0000">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text"  for="hora"><i class="far fa-clock fa-2x text-primary"></i></label>
+                      </div>
+                        <input type="time" name="hora" class="timepicker form-control form-control-lg" id="hora" value="12.00.0000">
+                    </div>
                   </div>
       
       
@@ -307,7 +322,7 @@
       <!-- listado de propiedades -->
         <div class="row" id="list-type" class="property-th-list">
 
-          <div class="card col-12 col-lg-6 my-2 list active" style="max-width: 100%;">
+          <div class="card col-12 col-lg-6 my-2 list active" >
             <div class="row no-gutters ">
             
               <div class="col-4 bg-contenedor c-img">
@@ -352,11 +367,7 @@
             </div>
           </div>
 
-        </div>
-
-        <div class="row" id="list-type" class="property-th-list">
-
-          <div class="card col-12 col-lg-6 my-2 list active" style="max-width: 100%;">
+          <div class="card col-12 col-lg-6 my-2 list active" >
             <div class="row no-gutters ">
             
               <div class="col-4 bg-contenedor c-img">
@@ -467,9 +478,14 @@
   <script src="js/jquery.stickit.min.js"></script>
   
    <script src="js/swiper.min.js"></script>
+   <script src="js/pickadatejs/picker.js"></script>
+   <script src="js/pickadatejs/picker.date.js"></script>
+   <script src="js/pickadatejs/picker.time.js"></script>
+
 
    <script src="js/picturefill.min.js"></script>
-  
+
+
   <script>
     $(function(){
 
