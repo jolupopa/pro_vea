@@ -815,6 +815,49 @@ div.more-options:before {
   border-top: 0px solid #e20;
   display: none; }
 
+/*-----------------------------------------
+    8. ESTILOS PARA "#bienvenidos"
+------------------------------------------*/
+.contenedor-video a {
+  background-color: rgba(255, 255, 255, 0.79);
+  width: 7rem;
+  height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  color: #006AFF;
+  font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-clip: padding-box;
+  border: 0 solid transparent;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.contenedor-video a:hover {
+  background-color: #006AFF;
+  color: #fff;
+  border: 10px solid rgba(255, 255, 255, 0.5); }
+
+.contenedor-video img {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.contenedor-video:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2); }
+
 @media (min-width: 576px) {
   section#litle-bar {
     height: 54px; }
