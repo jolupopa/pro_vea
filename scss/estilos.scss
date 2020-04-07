@@ -588,9 +588,9 @@ background-color: $color-secundario;
     text-decoration: none;
 }
 
-//+++++++++++++++++++++++++++
-// seccion grid el list.html
-//+++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++++++++
+// seccion grid  ciudades y agentes
+//+++++++++++++++++++++++++++++++++
  #grid-prop-agent .card-box{
      border-top: 2px solid $color-principal;
      border-bottom: 0;
@@ -742,9 +742,9 @@ background-color: $color-secundario;
    
 }
 
-//+++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++++++++++
 // sidebar buscar- comparar list.html
-//+++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++++++++++
 .contenedor-grid,
 .contenedor-list,
 .contenedor-buscar,
@@ -774,7 +774,7 @@ background-color: $color-secundario;
 }
 
 
-/* botones fijos */
+// botones fijos al lado derecho
 .btn-grid,
 .btn-list,
 .btn-buscar,
@@ -888,7 +888,7 @@ background-color: $color-secundario;
 
 
 //===================================
-// property-th
+// layout vista propiedad property-th  
 //===================================
 
 .property-th .card{
@@ -904,7 +904,7 @@ background-color: $color-secundario;
 }
 
 //===================================
-// property-th-list 
+// vista propiedad property-th-list 
 //===================================
 
 .property-th-list .card{
@@ -927,6 +927,87 @@ background-color: $color-secundario;
 .property-th-list .c-body{
     width: 100%
 }
+
+
+  
+//-----------------------------
+//Estilo para selector de orden
+
+/*the container must be positioned relative:*/
+.personal-select {
+    position: relative;
+    font-family: Arial;
+    
+  }
+  
+  .personal-select select {
+    display: none; /*hide original SELECT element:*/
+
+  }
+  
+  .select-selected {
+    background-color: $color-principal;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+    transition: all .5s ease;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+    
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: $color-secundario;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: $color-celeste;
+  }
+  
+
+
+
+
+
+
+
+
 
 //+++++++++++++++++++++++++++
 // seccion detalle

@@ -254,6 +254,8 @@ $(function(){
 		spinner: 'three-bounce'
 	});
 
+	
+
 
 
 
