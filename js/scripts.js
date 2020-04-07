@@ -179,7 +179,7 @@ $(function(){
 		$('.contenedor-comparar').toggleClass('d-none');
 	});
 
-	$('#sidebar-buscar .close-mobilbtn').on('click', function(){
+	$('#sidebar-buscar .close-sidebar').on('click', function(){
 		$('.contenedor-buscar').removeClass('active');
 		$('.contenedor-comparar').removeClass('d-none');
 	});
@@ -192,13 +192,18 @@ $(function(){
 		$('.contenedor-buscar').toggleClass('d-none');
 	});
 
-    $('#sidebar-comparar .close-mobilbtn').on('click', function(){
+    $('#sidebar-comparar .close-sidebar').on('click', function(){
+		$('.contenedor-comparar').removeClass('active');
+		$('.contenedor-buscar').removeClass('d-none');
+	});
+
+	$('#sidebar-comparar .close-comparar').on('click', function(){
 		$('.contenedor-comparar').removeClass('active');
 		$('.contenedor-buscar').removeClass('d-none');
 	});
 
 	/*----------------------------------------------------*/
-	/*  sidebar comparar
+	/*  iniciando datepiker.js
 	/*----------------------------------------------------*/
 	$('.datepicker').pickadate({
         monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],

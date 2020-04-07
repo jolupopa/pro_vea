@@ -103,21 +103,324 @@
         <!-- area busqueda -->
         <div id="sidebar-buscar" class="contenedor-buscar">
           <div class="btn-buscar"></div>
-            <div class="box-buscar bg-primary">
-              <h4 class="bg-transparent">Buscar inmuebles <span class="bg-dark close-mobilbtn"></span></h4>
-              <div class="caja-buscar">
-                
+          <div class="box-buscar">
+              <div class="row border-bottom pb-1">
+                <div class="col-10 ml-3 mt-3">
+                  <h4 class="text-white">Buscar Inmuebles:</h4>
+                </div>
+                <div class="col-1 mt-2">
+                  <span class="close-sidebar"></span>
+                </div>
               </div>
-            </div>
+
+               <!-- Main Search Container -->
+              <!-- main-search-container > container-search -->
+              <div class="container-search mt-5 pt-3">
+
+                <div class="row">
+                  <div class="col-12 mx-3">
+                    <!-- main-search-form > form-search -->
+                    <form class="form-search">
+                      <!-- search-type > type-searchs -->
+                      <div class="type-searchs">
+                        <label class="active">
+                          <input class="first-tab" name="tab" checked="checked" type="radio">
+                          En venta</label>
+                        <label><input name="tab" type="radio">En Alquiler</label>
+
+
+                        <!-- search-type-arrow > search-figure -->
+                        <div class="search-figure"></div>
+                      </div>
+                      <!-- main-search-box > box-search -->
+                      <div class="box-search">
+
+                        <div class="form-row ">
+                          <div class="col-6 mb-3">
+                            <label for="ciudad">Ciudad</label>
+                            <select class="custom-select" id="ciudad">
+                              <option selected disabled value="">Selecciona...</option>
+                              <option>Trujillo</option>
+                              <option>Piura</option>
+                              <option>Chiclayo</option>
+                              <option>Lima</option>
+                              <option>Arequipa</option>
+                            </select>
+                          </div>
+                          <div class="col-6 mb-3">
+                            <label for="zona">Zona</label>
+                            <select class="custom-select" id="zona">
+                              <option selected disabled value="">Selecciona...</option>
+                              <option>Trujillo</option>
+                              <option>Piura</option>
+                              <option>Chiclayo</option>
+                              <option>Lima</option>
+                              <option>Arequipa</option>
+                            </select>
+                          </div>
+                          <div class="col-6">
+                            <label for="tipo">Tipo de Inmueble</label>
+                            <select class="custom-select" id="tipo">
+                              <option selected disabled value="">Selecciona...</option>
+                              <option>Apartamentos</option>
+                              <option>Casas</option>
+                              <option>Comerciales</option>
+                              <option>Garages</option>
+                              <option>Terrenos</option>
+                            </select>
+                          </div>
+                          <div class="col-6 col">
+                            <label for="precio">Precio</label>
+                            <select class="custom-select" id="precio">
+                              <option selected disabled value="">Selecciona...</option>
+                              <option>100000</option>
+                              <option>200000</option>
+                              <option>300000</option>
+                              <option>400000</option>
+                              <option>+500000</option>
+                            </select>
+
+                          </div>
+                        </div>
+                        <div class="row my-5  align-items-center">
+                          <div class="col-6">
+                            <!-- more-search-options-trigger > more-less-trigger -->
+                            <a href="#" class="more-less-trigger" data-open-title="Mas opciones" data-close-title="Cerrar"></a>
+                          </div>
+                          <div class="col-6 text-lg-right">
+                            <button type="submit" class="btn btn-lg btn-block btn-primary">Buscar</button>
+                          </div>
+
+                        </div>
+
+
+
+
+                        <!-- More Search Options -->
+
+
+                        <div class="more-options col-12">
+                          <div class="more-options-container form-row mx-0">
+
+                            <div class="col-4">
+                              <label for="cuartos">Cuartos</label>
+                              <select class="custom-select" id="cuartos">
+                                <option>cualquier #</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>+5</option>
+                              </select>
+                            </div>
+
+                            <div class="col-4">
+                              <label for="banos">Baños</label>
+                              <select class="custom-select" id="banos">
+                                <option>cualquier #</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>+5</option>
+                              </select>
+                            </div>
+
+                            <div class="col-4">
+                              <label for="cochera">Cocheras</label>
+                              <select class="custom-select" id="cochera">
+                                <option>cualquier #</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>+5</option>
+                              </select>
+                            </div>
+
+
+                            <div class="row justify-content-between flex-fill">
+
+                              <div class="col-auto custom-control custom-checkbox custom-control-inline py-4">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Para estrenar</label>
+                              </div>
+                              <div class="col-auto custom-control custom-checkbox custom-control-inline py-4">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">Zona campestre</label>
+                              </div>
+                              <div class="col-auto custom-control custom-checkbox custom-control-inline py-4">
+                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                <label class="custom-control-label" for="customCheck3">Cerca al mar</label>
+                              </div>
+                              <div class="col-auto custom-control custom-checkbox custom-control-inline py-4">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">Condominio Privado</label>
+                              </div>
+                              <div class="col-auto custom-control custom-checkbox custom-control-inline py-4">
+                                <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                <label class="custom-control-label" for="customCheck5">Publicado max 15 dias</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- More Search Options / End -->
+
+                      </div>
+                      <!-- Box / End -->
+                    </form>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Main Search Container / End -->
+           </div>
         </div>
         <!-- area comparar -->
         <div id="sidebar-comparar" class="contenedor-comparar">
           <div class="btn-comparar"></div>
-            <div class="box-comparar bg-info">
-              <h4 class="bg-transparent">Comparar inmuebles <span class="bg-dark close-mobilbtn"></span></h4>
-              <div class="caja-comparar">
-              </div>      
+          <div class="box-comparar">
+            <div class="row border-bottom pb-1">
+              <div class="col-10 ml-3 mt-3">
+                <h4 class="text-white">Comparar Inmuebles:</h4>
+              </div>
+              <div class="col-1 mt-2">
+                <span class="close-sidebar"></span>
+              </div>
             </div>
+
+            <!-- contenido -->
+            <div class="row">
+             
+              <div class="col-12 property-th-list">
+                
+                <!-- Property -->
+                <div class="card col-12 my-4 list active bg-sidebar" >
+                  <div class="row no-gutters ">
+                  
+                    <div class="col-4 bg-contenedor c-img">
+                      <a href="detail-property.html">
+                        <div class="box-label">
+                          <span class="label-sale">En Venta</span>
+                        </div>
+                        <img src="img/properties/listing-01.jpg" class="card-img " alt="...">
+                    </a>
+      
+                    </div>
+      
+                    <div class="col-8 bg-contenedor c-body d-flex flex-column justify-content-around">
+                      <div class="card-body bg-contenedor">
+                        <h5 class="card-title">Titulo Condominio Californiaxx Condominio Californiaxx</h5>
+                        <div class="d-flex justify-content-between">
+                          <span class="h4"><i class="fas fa-dollar-sign"></i> 1,200.00</span>
+                          <button class="btn btn-danger py-1">Eliminar</button>
+                      </div>
+                      </div>
+                    </div>
+      
+                    <div class="col-12">
+                      <div class="card-footer bg-contenedor border-top d-flex flex-row justify-content-between">
+                        <div class="text-primary text">
+                          <a href="">
+                            <i class="fas fa-user-edit"></i> 
+                            <span class="text-muted">Jose peres</span>
+                        </a>
+                        </div>
+       
+                        <div class=""><i class="far fa-clock mr-2"></i>Publicado hace: 4 dias</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card col-12 my-4 list active bg-sidebar" >
+                  <div class="row no-gutters ">
+                  
+                    <div class="col-4 bg-contenedor c-img">
+                      <a href="detail-property.html">
+                        <div class="box-label">
+                          <span class="label-sale">En Venta</span>
+                        </div>
+                        <img src="img/properties/listing-01.jpg" class="card-img " alt="...">
+                    </a>
+      
+                    </div>
+      
+                    <div class="col-8 bg-contenedor c-body d-flex flex-column justify-content-around">
+                      <div class="card-body bg-contenedor">
+                        <h5 class="card-title">Titulo Condominio Californiaxx Condominio Californiaxx</h5>
+                        <div class="d-flex justify-content-between">
+                          <span class="h4"><i class="fas fa-dollar-sign"></i> 1,200.00</span>
+                          <button class="btn btn-danger py-1">Eliminar</button>
+                      </div>
+                      </div>
+                    </div>
+      
+                    <div class="col-12">
+                      <div class="card-footer bg-contenedor border-top d-flex flex-row justify-content-between">
+                        <div class="text-primary text">
+                          <a href="">
+                            <i class="fas fa-user-edit"></i> 
+                            <span class="text-muted">Jose peres</span>
+                        </a>
+                        </div>
+       
+                        <div class=""><i class="far fa-clock mr-2"></i>Publicado hace: 4 dias</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card col-12 my-4 list active bg-sidebar" >
+                  <div class="row no-gutters ">
+                  
+                    <div class="col-4 bg-contenedor c-img">
+                      <a href="detail-property.html">
+                        <div class="box-label">
+                          <span class="label-sale">En Venta</span>
+                        </div>
+                        <img src="img/properties/listing-01.jpg" class="card-img " alt="...">
+                    </a>
+      
+                    </div>
+      
+                    <div class="col-8 bg-contenedor c-body d-flex flex-column justify-content-around">
+                      <div class="card-body bg-contenedor">
+                        <h5 class="card-title">Titulo Condominio Californiaxx Condominio Californiaxx</h5>
+                        <div class="d-flex justify-content-between">
+                          <span class="h4"><i class="fas fa-dollar-sign"></i> 1,200.00</span>
+                          <button class="btn btn-danger py-1">Eliminar</button>
+                      </div>
+                      </div>
+                    </div>
+      
+                    <div class="col-12">
+                      <div class="card-footer bg-contenedor border-top d-flex flex-row justify-content-between">
+                        <div class="text-primary text">
+                          <a href="">
+                            <i class="fas fa-user-edit"></i> 
+                            <span class="text-muted">Jose peres</span>
+                        </a>
+                        </div>
+       
+                        <div class=""><i class="far fa-clock mr-2"></i>Publicado hace: 4 dias</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+        
+              <div class="col-12 d-flex justify-content-around border-top pt-2">
+                <a href="#" class="btn btn-danger reset px-4 close-comparar">Cerrar</a>
+                <a href="#" class="btn btn-primary">Comparar</a>
+
+              </div>
+            </div>
+            <!-- fin contenido -->
+            
+          </div>
         </div>
 
 

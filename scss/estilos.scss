@@ -589,7 +589,7 @@ background-color: $color-secundario;
 }
 
 //+++++++++++++++++++++++++++
-// seccion grid
+// seccion grid el list.html
 //+++++++++++++++++++++++++++
  #grid-prop-agent .card-box{
      border-top: 2px solid $color-principal;
@@ -743,7 +743,7 @@ background-color: $color-secundario;
 }
 
 //+++++++++++++++++++++++++++
-// sidebar buscar- comparar
+// sidebar buscar- comparar list.html
 //+++++++++++++++++++++++++++
 .contenedor-grid,
 .contenedor-list,
@@ -753,9 +753,9 @@ background-color: $color-secundario;
 	top: 0;
 	transition: 0.4s ease-in-out;
 	height: 100vh;
-	background-color: #fff;
-	right: -320px;
-	width: 320px;
+	background-color: rgb(102, 101, 101);
+	right: -450px;
+	width: 450px;
 	padding: 0;
 	z-index: 1010;
 	box-shadow: 0 0 25px rgba(0,0,0,0.1);
@@ -765,7 +765,7 @@ background-color: $color-secundario;
 .box-comparar {
 	overflow-y: scroll;
 	height: 100%;
-	width: 340px;
+	width: 470px;
 }
 
 .contenedor-buscar.active,
@@ -774,7 +774,7 @@ background-color: $color-secundario;
 }
 
 
-/* Trigger */
+/* botones fijos */
 .btn-grid,
 .btn-list,
 .btn-buscar,
@@ -852,25 +852,27 @@ background-color: $color-secundario;
  }
 
 
-.close-mobilbtn {
-	position: absolute;
+.close-sidebar {
+	
 	cursor: pointer;
-	font-size: 18px;
-    right: 30px;
-    height: 30px;
-	top: 26px;
+	font-size: 24px;
+    right: auto;
+    height: auto;
+    
+    background-color: transparent;
 	color: #fff;
 	z-index: 100;
-    padding: 5px 0 5px 5px;
-    border: 1px solid red;
+    padding: 0;
+    border: none;
 	
 }
 
-.close-mobilbtn:before {
+.close-sidebar:before {
     content: "\f00d";
     font-family: 'Font Awesome 5 Free';
-    position: relative;
+    
     font-weight: 900;
+   
     color: #fff;
 }
 
@@ -878,6 +880,10 @@ background-color: $color-secundario;
 .caja-comparar {
 	padding: 30px;
 	padding-bottom: 0;
+}
+
+.bg-sidebar{
+    background-color: rgb(102, 101, 101);
 }
 
 
@@ -1030,7 +1036,7 @@ background-color: $color-secundario;
     }
 
     /*-----------------------------------------
-        8. ESTILOS PARA "#bienvenidos"
+    tab video
     ------------------------------------------*/
 
     .contenedor-video a {
@@ -1066,6 +1072,8 @@ background-color: $color-secundario;
     .contenedor-video:hover img {
         transform: scale(1.2);
     }
+
+
 
 
 

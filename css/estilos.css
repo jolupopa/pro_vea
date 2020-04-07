@@ -601,9 +601,9 @@ div.more-options:before {
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   height: 100vh;
-  background-color: #fff;
-  right: -320px;
-  width: 320px;
+  background-color: #666565;
+  right: -450px;
+  width: 450px;
   padding: 0;
   z-index: 1010;
   -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
@@ -613,13 +613,13 @@ div.more-options:before {
 .box-comparar {
   overflow-y: scroll;
   height: 100%;
-  width: 340px; }
+  width: 470px; }
 
 .contenedor-buscar.active,
 .contenedor-comparar.active {
   right: 0; }
 
-/* Trigger */
+/* botones fijos */
 .btn-grid,
 .btn-list,
 .btn-buscar,
@@ -686,22 +686,20 @@ div.more-options:before {
 .contenedor-comparar.active .btn-comparar:before {
   display: none; }
 
-.close-mobilbtn {
-  position: absolute;
+.close-sidebar {
   cursor: pointer;
-  font-size: 18px;
-  right: 30px;
-  height: 30px;
-  top: 26px;
+  font-size: 24px;
+  right: auto;
+  height: auto;
+  background-color: transparent;
   color: #fff;
   z-index: 100;
-  padding: 5px 0 5px 5px;
-  border: 1px solid red; }
+  padding: 0;
+  border: none; }
 
-.close-mobilbtn:before {
+.close-sidebar:before {
   content: "\f00d";
   font-family: 'Font Awesome 5 Free';
-  position: relative;
   font-weight: 900;
   color: #fff; }
 
@@ -709,6 +707,9 @@ div.more-options:before {
 .caja-comparar {
   padding: 30px;
   padding-bottom: 0; }
+
+.bg-sidebar {
+  background-color: #666565; }
 
 .property-th .card {
   width: 100%; }
@@ -816,7 +817,7 @@ div.more-options:before {
   display: none; }
 
 /*-----------------------------------------
-    8. ESTILOS PARA "#bienvenidos"
+tab video
 ------------------------------------------*/
 .contenedor-video a {
   background-color: rgba(255, 255, 255, 0.79);
