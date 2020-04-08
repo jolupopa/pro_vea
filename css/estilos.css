@@ -375,6 +375,51 @@ div.more-options:before {
   color: #006AFF;
   left: .2rem; }
 
+.top-site-outer {
+  padding: 0 16px;
+  display: inline-block; }
+
+.top-site-outer .top-site-inner {
+  position: relative; }
+
+.top-site-outer .top-site-inner > a {
+  color: inherit;
+  display: block;
+  outline: none; }
+
+.top-site-outer .tile {
+  cursor: pointer;
+  height: 96px;
+  position: relative;
+  width: 96px; }
+
+.top-site-outer .screenshot {
+  background-position: top left;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: relative;
+  top: 0;
+  width: 100%; }
+
+.top-site-outer .title {
+  background-color: White;
+  color: red;
+  font: message-box;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 96px;
+  position: relative; }
+
+.btn-remove {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
 .box-label {
   position: absolute;
   top: 0;
@@ -991,7 +1036,10 @@ tab video
     color: #006AFF;
     background-color: White;
     border-bottom: 2px solid #006AFF;
-    border-top: 2px solid #006AFF; } }
+    border-top: 2px solid #006AFF; }
+
+  #favoritos h5.card-title {
+    font-size: 12px !important; } }
 @media (min-width: 992px) {
   .caja-responsive {
     background-color: blue; }

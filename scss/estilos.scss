@@ -156,7 +156,7 @@ a:hover{
 
 
 //+++++++++++++++++++++++++++
-// 2 navbar
+// 2 navbar menu
 //+++++++++++++++++++++++++++
 
 /*Estilos boton menu personalizado*/
@@ -454,6 +454,61 @@ div.more-options:before {
     font-size: 3rem;
     color: $color-principal;
     left: .2rem;
+}
+
+
+
+.top-site-outer {
+    padding: 0 16px;
+    display: inline-block; 
+}
+
+.top-site-outer .top-site-inner {
+    position: relative; 
+}
+
+.top-site-outer .top-site-inner > a {
+    color: inherit;
+    display: block;
+    outline: none; 
+}
+   
+  
+.top-site-outer .tile {
+      cursor: pointer;
+      height: 96px;
+      position: relative;
+      width: 96px;
+ }
+      
+.top-site-outer .screenshot {
+      background-position: top left;
+      background-size: cover;
+      height: 100%;
+      left: 0;
+      opacity: 1;
+      position: relative;
+      top: 0;
+      width: 100%; 
+}
+  
+    
+.top-site-outer .title {
+      background-color: White;
+      color: red;
+      font: message-box;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      width: 96px;
+      position: relative; 
+}
+
+.btn-remove{
+        position: absolute;
+        top: 0 ;
+        left: 100%;
+        transform: translate(-50%, -50%);       
 }
 
 //+++++++++++++++++++++++++++
@@ -1272,6 +1327,12 @@ background-color: $color-secundario;
         background-color: White;
         border-bottom: 2px solid $color-principal;
         border-top: 2px solid $color-principal;
+    }
+
+    // tamaño de titulo de propiedad en favoritos
+    #favoritos h5.card-title{
+        font-size: 12px !important;
+
     }
 
     
