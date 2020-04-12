@@ -123,7 +123,7 @@ a:hover {
   color: #fff;
   left: .2rem; }
 
-button.navbar-toogler {
+#nav-main button.navbar-toogler {
   margin: 0px;
   padding: 0px;
   height: 50px;
@@ -132,9 +132,9 @@ button.navbar-toogler {
   border: #1B5098;
   color: white; }
 
-button.navbar-toogler:hover,
-button.navbar-toogler:visited,
-button.navbar-toogler:focus {
+#nav-main button.navbar-toogler:hover,
+#nav-main button.navbar-toogler:visited,
+#nav-main button.navbar-toogler:focus {
   border: #1B5098;
   outline: none; }
 
@@ -144,7 +144,7 @@ button.navbar-toogler:focus {
   font-weight: 900;
   font-size: 2rem; }
 
-.navbar-nav .nav-link {
+#nav-main .navbar-nav .nav-link {
   color: #d6d3d3;
   padding: 1rem 1.5rem;
   display: -webkit-box;
@@ -157,22 +157,22 @@ button.navbar-toogler:focus {
   transition: all .5s ease;
   border-radius: .5rem; }
 
-.navbar-nav .nav-link::after {
+#nav-main .navbar-nav .nav-link::after {
   font-family: 'Font Awesome 5 Free';
   content: '\f105';
   font-weight: 900;
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
-.navbar-nav .nav-link:hover {
+#nav-main .navbar-nav .nav-link:hover {
   color: white;
   background-color: #95cff0; }
 
-.navbar-nav .nav-link:hover::after {
+#nav-main .navbar-nav .nav-link:hover::after {
   -webkit-transform: rotateZ(180deg);
           transform: rotateZ(180deg); }
 
-.navbar-nav .nav-link.active {
+#nav-main .navbar-nav .nav-link.active {
   color: white;
   background-color: #006AFF; }
 
@@ -960,6 +960,30 @@ tab video
 .contenedor-video:hover img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2); }
+
+.shadow-pixel {
+  -webkit-box-shadow: 0.2rem 0.2rem 0 rgba(233, 236, 239, 0.5) !important;
+          box-shadow: 0.2rem 0.2rem 0 rgba(233, 236, 239, 0.5) !important; }
+
+.shadow-soft {
+  -webkit-box-shadow: 0 0.25rem 1.875rem rgba(42, 53, 79, 0.05) !important;
+          box-shadow: 0 0.25rem 1.875rem rgba(42, 53, 79, 0.05) !important; }
+
+.shadow-hover:hover {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(42, 53, 79, 0.12) !important;
+          box-shadow: 0 0.5rem 1rem rgba(42, 53, 79, 0.12) !important; }
+
+.shadow-sm-hover:hover {
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(42, 53, 79, 0.05) !important;
+          box-shadow: 0 1.5rem 4rem rgba(42, 53, 79, 0.05) !important; }
+
+.shadow-lg-hover:hover {
+  -webkit-box-shadow: 0 1rem 3rem rgba(42, 53, 79, 0.125) !important;
+          box-shadow: 0 1rem 3rem rgba(42, 53, 79, 0.125) !important; }
+
+.shadow-none-hover:hover {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
 
 @media (min-width: 576px) {
   section#litle-bar {

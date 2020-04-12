@@ -179,7 +179,7 @@ a:hover{
 }
 
 
-button.navbar-toogler {
+#nav-main button.navbar-toogler {
     margin: 0px;
     padding: 0px;
     height: 50px;
@@ -189,9 +189,9 @@ button.navbar-toogler {
     color: white;
 }
 
-button.navbar-toogler:hover,
-button.navbar-toogler:visited,
-button.navbar-toogler:focus{
+#nav-main button.navbar-toogler:hover,
+#nav-main button.navbar-toogler:visited,
+#nav-main button.navbar-toogler:focus{
     border: $color-secundario;
     outline: none;
     }
@@ -205,7 +205,7 @@ button.navbar-toogler:focus{
     font-size: 2rem;
 }
 
-.navbar-nav .nav-link {
+#nav-main .navbar-nav .nav-link {
    color: rgb(214, 211, 211);
    padding: 1rem 1.5rem;
    display: flex;
@@ -214,23 +214,23 @@ button.navbar-toogler:focus{
    border-radius: .5rem;
 }
 
-.navbar-nav .nav-link::after {
+#nav-main .navbar-nav .nav-link::after {
    font-family: 'Font Awesome 5 Free';
    content: '\f105';
    font-weight: 900;
    transition: all .5s ease;
  }
 
- .navbar-nav .nav-link:hover {
+ #nav-main .navbar-nav .nav-link:hover {
      color: white;
      background-color: $color-celeste;
   }
 
-  .navbar-nav .nav-link:hover::after {
+  #nav-main .navbar-nav .nav-link:hover::after {
     transform: rotateZ(180deg);
  }
  
- .navbar-nav .nav-link.active {
+ #nav-main .navbar-nav .nav-link.active {
     color: white;
     background-color: $color-principal;
 
@@ -1208,6 +1208,19 @@ background-color: $color-secundario;
     .contenedor-video:hover img {
         transform: scale(1.2);
     }
+
+
+    //+++++++++++++++++++++++++++
+    // pagina my-account
+    //+++++++++++++++++++++++++++
+
+    
+    .shadow-soft {
+    box-shadow:0 .25rem 1.875rem rgba(42,53,79,.05)!important
+    }
+    
+
+    
 
 
 

@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<title>VeaInmuebles | Mejor opción para inmueble!</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+	<!-- google-fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="vendor/bootstrap-fileinput/css/fileinput.min.css">
+
+	<!-- Font Awesome 5 -->
+	<link rel="stylesheet" href="css/all.min.css">
+
+	<!-- owl-carousel -->
+	<link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendor/owl-carousel/assets/owl.theme.default.min.css">
+
+	<link rel="stylesheet" href="vendor/slideform/dist/css/slideform.css">
+
+	
+
+	<link href="vendor/bootstrap-fileinput/themes/explorer-fas/theme.min.css" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+	<style>
+
+		form {
+			opacity: 0;
+			transition: all .3s ease;
+		}
+	
+		form.slideform-form {
+			opacity: 1;
+	
+		}
+	
+		.slideform-form{
+			border: 2px solid red; 
+			height: 657px  !important;
+	
+		}
+	
+		.slideform-slide{
+	
+		   display: block;
+	
+	   }
+	
+	   .slideform-group{
+		position: relative;
+		border: 1px solid blue;
+		height: 590px;
+		width: 100%;
+		max-width: 100% !important;
+	
+		}
+	
+		.slideform-progress-bar{
+		max-width: 80% !important;
+		background: #faf !important;
+		}
+
+		
+		form.slideform-form .slideform-progress-bar span{
+			background: #1220eb;
+		}
+	
+		.slideform-group .slideform-btn {
+		border-color: #1220eb !important;
+		background: #1220eb !important;
+	
+		position: relative;
+		top: 15%;
+		left: 72%;
+	
+	   }
+
+		
+
+		form.slideform-form .slideform-btn {
+		
+		background: #1220eb;
+		border: 1px solid #1220eb;
+		color: #fff;
+		
+	}
+	
+	   form.slideform-form .slideform-footer {
+	
+		border-top: 1px solid #f6f6f6;
+	
+	
+	}
+	
+	
+		section#send-property {
+			height:100%;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+			position: relative;
+	
+		}
+	
+		section#pie{
+			position: relative;
+			height: 100px;
+		}
+	
+	
+	
+		.gist .gist-file {
+			margin-top: 40px;
+		}
+	
+		.gist .gist-meta {
+			display: none !important;
+		}
+	
+	</style>
+	<!-- estilos ves -->
+	<link rel="stylesheet" href="css/estilos.css">
+
+
+</head>
+
+<body>
+	<section id="litle-bar" class="bg-white d-md-none">
+		<div class="text-center">
+			<a href="#">
+				<h1 class="logo text-primary py-2">VeaInmuebles</h1>
+			</a>
+		</div>
+	</section>
+
+	<section id="big-bar" class="d-none d-md-block bg-white">
+		<div class="container">
+			<div class="row justify-content-md-between align-items-center">
+				<div class="col-auto">
+					<a href="#">
+						<h1 class="logo text-primary py-2">VeaInmuebles</h1>
+					</a>
+				</div>
+				<div class="col-auto ml-auto text-primary">
+					<a href="https://web.whatsapp.com/" target="_blank">
+						<i class="fab fa-whatsapp fa-2x"></i>
+						<span class="font-weight-bold h5 ml-2">+51-044-916245396</span>
+					</a>
+				</div>
+				<div class="col-auto text-primary">
+					<a href="" data-toggle="modal" data-target="#modalContacto"> <i class="far fa-envelope fa-2x"></i>
+						<span class="font-weight-bold ml-2 h5 ">jlportilla76@gmail.com</spanp>
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<nav id="nav-main" class="navbar navbar-expand-md bg-secundary text-white">
+			<div class="container">
+
+				<button type="button" class="navbar-toogler d-md-none" data-toggle="collapse" data-target="#menu-main"
+				aria-expanded="false" aria-label="menú principal">
+				<span class="icon-menu"></span>
+			</button>
+
+
+			<a href="login.html" class="btn btn-primary order-md-2 ml-auto mr-2">Ingresar</a>
+			<a href="register.html" class="btn btn-primary order-md-3">Registrar</a>
+
+			<div class="collapse navbar-collapse" id="menu-main">
+				<ul class="navbar-nav mt-4 mt-md-0">
+					<li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="nav-link active">Inicio</a></li>
+					<li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="nav-link">Nosotros</a></li>
+					<li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="nav-link">Agentes</a></li>
+					<li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="nav-link">Servicios</a></li>
+					<li class="nav-item mb-1 mb-md-0 mr-md-0"><a href="#" class="nav-link">Contactar</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section id="send-property">
+
+		
+
+		<div class="row">
+			<div class="col-12 bg-contenedor">
+
+				<form action="" enctype="multipart/form-data">
+					<!--Advertencia-->
+					<div class="slideform-slide">
+						<div class="slideform-group">
+							<div class="container">
+								<div class="row">|
+									<div class="col-12 jumbotron">
+										<h1><span><i class="fas fa-plus-circle"></i></span>Agregar nueva propiedad.</h1>
+									</div>
+									<div class="col-12 col-md-8 offset-md-2">
+										<div class="alert alert-primary" role="alert">
+											<h3 class="pt-4">Diposición Legal</h3>
+											<p class="h4 pb-5">Acepto que la información que estoy enviado es correcta y no afecta la sensibilidad del publico y que estoy de acuerdo y me sujeto a las disposiciones de las normas legales vigentes de las leyes peruanas en el manejo de información digital.
+											</p>
+											Aceptar para continuar
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Inf-basica-->
+					<div class="slideform-slide">
+						<div class="slideform-group">
+							<div class="container">
+								<div class="row">|
+									
+									<div class="col-12">
+										<h4 class="bg-container"> Paso 1 :Informacion Basica.</h4>
+									</div>
+									<div class="col-12">
+										<div class="form-group">
+											<label for="title">Título</label>
+											<input type="text" id="title" class="form-control form-control-lg" name="title" placeholder="Titulo de la propiedad">
+
+										</div>
+										<div class="form-group">
+											<label for="extracto">Resumen descriptivo</label>
+											<textarea class="form-control" id="extracto" name="extracto" rows="2" placeholder="Resumen descriptivo"></textarea>
+											
+										</div>
+										<div class="form-group">
+											<label for="detalle">Detalle narrativo</label>
+											<textarea class="form-control" id="detalle" rows="3" placeholder="Detalle narrativo del inmueble"></textarea>
+											<small id="detalleHelp" class="h6 form-text text-muted">
+												* Puedes dejar en blanco y despues completarlo en modo edición.</small>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Inf-Principa-->
+					<div class="slideform-slide">
+						<div class="slideform-group">
+							<div class="container">
+								<div class="row">|
+									
+									<div class="col-12">
+										<h4 class="bg-container"> Paso 2 :Información Principal.</h4>
+									</div>
+									<div class="col-12">
+										<div class="form-group">
+											<label for="direccion">Dirección</label>
+											<input type="text" id="direccion" class="form-control form-control-lg" name="direccion" placeholder="Direccion de la propiedad.">
+										</div>
+									</div>
+
+									<div class="col-6 mb-3" >
+										<label for="ciudad">Ciudad</label>
+										<select class="custom-select mx-0" id="ciudad">
+											<option selected disabled value="">Selecciona...</option>
+											<option>Trujillo</option>
+											<option>Piura</option>
+											<option>Chiclayo</option>
+											<option>Lima</option>
+											<option>Arequipa</option>
+										</select>
+									</div>
+									<div class="col-6 mb-3">
+									<label for="zona">Zona</label>
+									<select class="custom-select mx-0" id="zona">
+										<option selected disabled value="">Selecciona...</option>
+										<option>Trujillo</option>
+										<option>Piura</option>
+										<option>Chiclayo</option>
+										<option>Lima</option>
+										<option>Arequipa</option>
+									</select>
+									</div>
+
+									<div class="col-6">
+										<label for="tipo">Tipo de Inmueble</label>
+										<select class="custom-select" id="tipo">
+										  <option selected disabled value="">Selecciona...</option>
+										  <option>Apartamentos</option>
+										  <option>Casas</option>
+										  <option>Comerciales</option>
+										  <option>Garages</option>
+										  <option>Terrenos</option>
+										</select>
+									  </div>
+
+									  <div class="col-6 mb-3">
+										<label for="operacion">Operación</label>
+										<select class="custom-select" id="operacion">
+										  <option selected  value="">En Venta</option>
+										  <option>En venta</option>
+										  <option>En Alquiler</option>
+										  <option>Alojamiento temporal</option>
+										</select>
+									  </div>
+
+									  <div class="col-4">
+										  <div class="form-group">
+											<label for="ano">Año de Construcción</label>
+											<input type="numeric" id="ano" name="ano" class="form-control" placeholder="Ejmplo:2010">
+										</div>
+									  </div>
+
+									  <div class="col-4">
+										<div class="form-group">
+										  <label for="area">Area en metros2</label>
+										  <input type="numeric" id="area" name="area" class="form-control" placeholder="Ejemplo:350">
+									  </div>
+									</div>
+
+									<div class="col-4 ">
+										<div class="form-group">
+										  <label for="precio">Precio en dolares</label>
+										  <input type="numeric" id="precio" name="precio" class="form-control" placeholder="120000">
+									  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Caracteristicas del inmueble-->
+					<div class="slideform-slide">
+						<div class="slideform-group">
+							<div class="container">
+								<div class="row">|
+									
+									<div class="col-12">
+										<h4 class="bg-container"> Paso 3: Caracteristicas del inmueble.</h4>
+									</div>
+									
+
+									<div class="col-4 mb-3" >
+										<label for="cuartos">Cuartos</label>
+										<select class="custom-select mx-0" id="cuartos">
+											<option selected disabled value="">Selecciona...</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>>=5</option>
+										</select>
+									</div>
+									<div class="col-4 mb-3">
+									<label for="banos">Baños</label>
+									<select class="custom-select mx-0" id="banos">
+										<option selected disabled value="">Selecciona...</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>>=5</option>
+									</select>
+									</div>
+
+									<div class="col-4">
+										<label for="cochera">Cocheras</label>
+										<select class="custom-select" id="cochera">
+										  <option selected disabled value="">Selecciona...</option>
+										  <option>1</option>
+										  <option>2</option>
+										  <option>>=3</option>
+										</select>
+									</div>
+
+									<div class="col-6">
+										<h5>Solo Viviendas</h5>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" value="" id="check1">
+											<label class="form-check-label" for="check1">
+											  Inmueble Saneado.
+											</label>
+										  </div>
+										  <div class="form-check">
+											<input class="form-check-input" type="checkbox" value="" id="check2">
+											<label class="form-check-label" for="check2">
+											  Vivienda para Estrenar
+											</label>
+										  </div>
+										  <div class="form-check">
+											<input class="form-check-input" type="checkbox" value="" id="check3">
+											<label class="form-check-label" for="check3">
+											  Vivienda Amoblada.
+											</label>
+										  </div>
+										  <div class="form-check">
+											<input class="form-check-input" type="checkbox" value="" id="check4">
+											<label class="form-check-label" for="check4">
+											  Aire Acondicionado.
+											</label>
+										  </div>
+										  <div class="form-check">
+											<input class="form-check-input" type="checkbox" value="" id="check5">
+											<label class="form-check-label" for="check5">
+											  Calefacción.
+											</label>
+										  </div>
+										  <div class="form-check">
+											<input class="form-check-input" type="checkbox" value="" id="check6">
+											<label class="form-check-label" for="check6">
+											  Lavanderia.
+											</label>
+										  </div>
+										  <div class="form-check">
+											<input class="form-check-input" type="checkbox" value="" id="check7">
+											<label class="form-check-label" for="check7">
+											  Patio Interior.
+											</label>
+										  </div>
+
+									</div>
+									<div class="col-6">
+										<h5>Solo Terrenos</h5>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="radio" value="" id="radio1">
+											<label class="form-check-label" for="radio1">
+											  Terreno Urbano.
+											</label>
+										  </div>
+										  <div class="form-check">
+											<input class="form-check-input" type="radio" name="radio" value="" id="radio2">
+											<label class="form-check-label" for="radio2">
+											  Terreno Agricola.
+											</label>
+										  </div>
+										  <div class="form-check">
+											<input class="form-check-input" type="radio" name="radio" value="" id="radio3">
+											<label class="form-check-label" for="radio3">
+											  Terreno Industrial o Comercial.
+											</label>
+										  </div>
+									</div>
+									
+									<div class="col-6 mt-2">
+										<div class="form-group">
+											<label for="maps">Url Google Maps</label>
+											<input type="url" class="form-control" name="maps" id="maps" placeholder="Url google Maps">
+											<small class=" form-text text-muted">
+												** Opcional.
+											  </small>
+
+										</div>
+									</div>
+									<div class="col-6 mt-2">
+										<div class="form-group">
+											<label for="video">Url Video</label>
+											<input type="url" class="form-control" name="video" id="video" placeholder="Url video">
+											<small class=" form-text text-muted">
+												** Opcional.
+											  </small>
+
+										</div>
+									</div>
+
+									<div class="col-6">
+										<div class="form-group">
+											<label for="plano1">Url plano Frontal</label>
+											<input type="text" class="form-control" name="plano1" id="plano1" placeholder=" Plano frontal">
+											<small class=" form-text text-muted">
+												** Opcional.
+											  </small>
+
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="form-group">
+											<label for="plano2">Url plano Distribución</label>
+											<input type="text" class="form-control" name="plano2" id="plano2" placeholder=" Plano Distribución">
+											<small class=" form-text text-muted">
+												** Opcional.
+											  </small>
+										</div>
+									</div>
+
+									 
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Galeria de Inmagenes-->
+					<div class="slideform-slide">
+						<div class="slideform-group">
+							<div class="container">
+								<div class="row">|
+									
+									<div class="col-12">
+										<h4 class="bg-container"> Paso 4: Subir Galeria de Imagenes.</h4>
+									</div>
+									<div class="col-12">
+										<div class="form-group">
+											<div class="file-loading">
+												<label for="foto">Subir Inmagen</label>
+												<input type="file" multiple id="foto" >
+											</div>
+
+										</div>
+										
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Registro completado-->
+					<div class="slideform-slide">
+						<div class="slideform-group">
+							<div class="container">
+								<div class="row">|			
+									<div class="col-12">
+										<div class="jumbotron">
+											<h1>Felicitaciones has guardado la información correctamente.</h1>	
+										</div>	
+									</div>
+									<div class="col-12 col-md-8 offset-md-2">
+										<div class="alert alert-primary" role="alert">
+											<h3 class="pt-4">Tienes credito para publicar?</h3>
+											<p class="h4 pb-5">Asegurate de contar con credito para publicar tu nuevo inmueble, de no contar con credito o habiendose agotado puedes obtenerlo a traves de nuestros canales de distribución o a traves de <a href="">Aca</a> .
+											</p>
+											<button class="btn btn-danger">Cerrar</button>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<footer class="slideform-footer bg-transparent">
+						<div class="buttons">
+							<button class="slideform-btn slideform-btn-next"><i class="icon-chevron-down "></i></button>
+							<button class="slideform-btn slideform-btn-prev"><i class="icon-chevron-up"></i></button>
+						</div>
+						<div class="slideform-progress-bar">
+							<span></span>
+						</div>
+					</footer>
+
+				</form>
+
+			</div>
+		</div>
+	</section>
+
+
+	<footer id="footer" class="bg-white text-truncate">
+		<div class="container">
+			<div class="row align-items-center">
+
+				<div class="columna-inclinada col-12 col-md-6 col-xl-5 py-2">
+					<div class="row">
+
+						<div class="col-12">
+							<h2 class="text-white font-weight-bold h1">Soporte:</h2>
+						</div>
+
+						<div class="col-4 text-white text-center">
+							<i class="fas fa-tools fa-4x"></i>
+						</div>
+
+						<div class="col-8  text-white pl-0">
+							<h3>(511) 388-7813</h3>
+							<p>Ayuda disponible: L - V de 8:00 am a 7.00pm.</p>
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-12 col-md-6 col-xl-7 py-2 text-center text-md-right small">
+					<ul class="enlaces-secundario list-unstyled d-inline-flex text-uppercase ">
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Nosotros</a></li>
+						<li><a href="#">Políticas de Privacidad</a></li>
+					</ul>
+					<p>©2020. Todos los derechos reservados.</p>
+				</div>
+
+			</div>
+		</div>
+
+	</footer>
+
+	<!-- eliminar este codigo de testeo -->
+	<div class="caja-responsive text-center fixed-bottom">
+		<h4 class="d-sm-none"> 0 =< extra-smoll < 576px</h4>
+		<h4 class="d-none d-sm-block d-md-none text-white">576px =< smoll < 768px</h4>
+		<h1 class="d-none d-md-block d-lg-none text-white"> 768px =< mediun < 992px </h1>
+		<h1 class="d-none d-lg-block d-xl-none text-white"> 992px =< large < 1200px</h1>
+		<h1 class="d-none d-xl-block"> 1200px =< extra-large </h1>
+	</div>
+
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.stickit.min.js"></script>
+	<script src="js/picturefill.min.js"></script>
+
+	<script src="vendor/slideform/dist/js/slideform.js" ></script>
+	<script src="vendor/jquery-validation/dist/jquery.validate.min.js" ></script>
+	<script src="vendor/jquery-validation/dist/additional-methods.min.js" ></script>
+
+
+	<script src="vendor/bootstrap-fileinput/js/plugins/piexif.min.js" ></script>
+	<script src="vendor/bootstrap-fileinput/js/plugins/sortable.min.js" ></script>
+
+	<script src="vendor/bootstrap-fileinput/js/fileinput.min.js" ></script>
+	<script src="vendor/bootstrap-fileinput/js/locales/es.js" ></script>
+	<script src="vendor/bootstrap-fileinput/themes/fas/theme.min.js" ></script>
+
+
+
+
+
+	<script>
+		( function ($) {
+			jQuery.validator.addMethod("equals", function(value, element, param) {
+				return this.optional(element) || value === param;
+			});
+
+			$(document).ready( function () {
+				
+
+				var $form = $('form');
+
+				$form.slideform({
+					validate: {
+						rules: {
+							group7: {
+								required: true,
+								equals: "valid"
+							}
+						},
+						messages: {
+							group7: {
+								required: 'Please select an option',
+								equals: 'You must select valid!'
+							}
+						}
+					},
+					submit: function (event, form) {
+						$form.trigger('goForward');
+					}
+				});
+
+				$(".slideform-btn-submit").click(function(){
+               		$("div.buttons").addClass("d-none");
+					$("footer.slideform-footer").addClass("justify-content-center");
+           		})
+
+				   $("#foto").fileinput({
+						theme: 'fas',
+						showUpload: false,
+						showCaption: false,
+						browseClass: "btn btn-primary btn-lg",
+						fileType: "any",
+						previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+						overwriteInitial: false,
+						initialPreviewAsData: true,
+						initialPreview: [
+							"http://lorempixel.com/1920/1080/transport/1",
+							"http://lorempixel.com/1920/1080/transport/2",
+							"http://lorempixel.com/1920/1080/transport/3"
+						],
+						initialPreviewConfig: [
+							{caption: "transport-1.jpg", size: 329892, width: "120px", url: "{$url}", key: 1},
+							{caption: "transport-2.jpg", size: 872378, width: "120px", url: "{$url}", key: 2},
+							{caption: "transport-3.jpg", size: 632762, width: "120px", url: "{$url}", key: 3}
+						]
+					});
+
+
+				
+			});
+		}(jQuery))
+	</script>
+
+
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>
