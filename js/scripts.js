@@ -202,6 +202,24 @@ $(function(){
 		$('.contenedor-buscar').removeClass('d-none');
 	});
 
+	//++++++++++++++++++++++++++++++++++
+	// my-account page
+	//++++++++++++++++++++++++++++++++++
+
+	// close menu-user  movil selected any link of menu movil
+    $('#menu-user a.nav-link').click(function(){
+		
+
+		$('div#navbarMenuUser').removeClass('show');
+		$('#menu-user button.navbar-toggler').addClass('collapsed');
+		var strn =$('#menu-user a.nav-link.active').text();
+		$("a#info-seleccion").html(strn)
+
+		
+		console.log(strn);
+	 });
+
+
 	
 
 	
