@@ -15,7 +15,7 @@ $(function(){
 
 		
 
-    //------------------------------------>
+    //--------Index---------------------------->
 	//cambio de icono y cierre de menu movil
 	//------------------------------------>
     //add and remove class btn menu
@@ -24,10 +24,31 @@ $(function(){
     });
     // close menu movil selected any link of menu movil
     $('#menu-main li a').click(function(){
-        $('#nav-main span.icon-menu').removeClass('icon-close');
+		$('#nav-main span.icon-menu').removeClass('icon-close');
+		$("#nav-main button").attr("aria-expanded", false);
         $('div#menu-main').removeClass('show');
 	 });
 
+
+	 //++++++++++++++++++++++++++++++++++
+	// icon-menu-user 
+	//++++++++++++++++++++++++++++++++++
+
+	// close menu-user  
+	  //add and remove class btn menu
+	$('#menu-user span.icon-menu-user').click(function(){
+		$('#menu-user span.icon-menu-user').toggleClass('icon-close-user');  
+		});
+    // close menu movil selected any link of menu movil
+    $('#menu-user li a').click(function(){	
+		$('#menu-user span.icon-menu-user').removeClass('icon-close-user');
+		$("#menu-user button").attr("aria-expanded", false);
+		console.log("quita clse icon-close-user");
+        $('#menu-user div.navbar-collapse').removeClass('show');
+	 });
+
+
+	 //+++++++Login++++++++++++++++++++++++++
 	 //change icon-see-password of login form
       // true defaul icon-eye-slash
       var setOpcion = true; 
@@ -133,7 +154,8 @@ $(function(){
      //------------------------------>
      $('#favoritos span.icon-left').click(function(){
         $('#favoritos span.icon-left').toggleClass('icon-down');  
-    });
+	});
+	
     //-------------->
     // carousel
     //-------------->
@@ -164,12 +186,14 @@ $(function(){
     	e.preventDefault();
     	owl.trigger('prev.owl.carousel', [300]);
     	
-    });
-    
-	//fijar el menu
+	});
+	
+    //++++++++++++++++++++++++++++++++++
+	//fijar el menu principal -  superior
 	$("#nav-main").stickit({
 		zindex:200
 	});
+	//+++++++++++++++++++++++++++++++++
 
 	/*----------------------------------------------------*/
 	/*  sidebar buscar
@@ -202,23 +226,9 @@ $(function(){
 		$('.contenedor-buscar').removeClass('d-none');
 	});
 
-	//++++++++++++++++++++++++++++++++++
-	// my-account page
-	//++++++++++++++++++++++++++++++++++
+	
 
-	// close menu-user  movil selected any link of menu movil
-    $('#menu-user a.nav-link').click(function(){
-		
-
-		$('div#navbarMenuUser').removeClass('show');
-		$('#menu-user button.navbar-toggler').addClass('collapsed');
-		var strn =$('#menu-user a.nav-link.active').text();
-		$("a#info-seleccion").html(strn)
-
-		
-		console.log(strn);
-	 });
-
+  
 
 	
 
