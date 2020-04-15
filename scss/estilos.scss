@@ -1277,19 +1277,46 @@ background-color: $color-secundario;
     
 
     //+++++++++++++++++++++++++++
-    // pagina my-account
+    // edit property
     //+++++++++++++++++++++++++++
+
+    div.botones-img{
+        position: relative;
+
+    }
+
+    div.botones-img button{
+        position: absolute;
+        top: 1.5rem;
+        left: 16.5rem;
+
+    }
+
+    div.botones-img div.form-check{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        z-index: 15;
+        font-size: 13px;
+        font-weight: bold;
+        color: white;
+    }
+
+    div.botones-img div.custom-radio{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        z-index: 30;
+        font-size: 13px;
+        font-weight: bold;
+        color: white;
+    }
+    
 
 
 
 
    
-
-    // color active menu-user
-
-    //nav#menu-user a.nav-link.active{
-      //  color: $color-principal !important;
-    //}  
 
     
 

@@ -1010,6 +1010,32 @@ tab video
   border: #F9F9FB;
   outline: none !important; }
 
+div.botones-img {
+  position: relative; }
+
+div.botones-img button {
+  position: absolute;
+  top: 1.5rem;
+  left: 16.5rem; }
+
+div.botones-img div.form-check {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 15;
+  font-size: 13px;
+  font-weight: bold;
+  color: white; }
+
+div.botones-img div.custom-radio {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 30;
+  font-size: 13px;
+  font-weight: bold;
+  color: white; }
+
 @media (min-width: 576px) {
   section#litle-bar {
     height: 54px; }
